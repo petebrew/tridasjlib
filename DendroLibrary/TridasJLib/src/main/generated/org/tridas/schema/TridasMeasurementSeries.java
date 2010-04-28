@@ -98,9 +98,9 @@ public class TridasMeasurementSeries
     protected Date measuringDate;
     @TridasEditProperties(machineOnly = true)
     protected TridasWoodCompleteness woodCompleteness;
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_GENERICID, dictionary = "securityUser", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME, identifierField = "corina.analystID")
+    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_GENERICID, dictionary = "securityUser", identifierField = "corina.analystID", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME)
     protected String analyst;
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_GENERICID, dictionary = "securityUser", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME, identifierField = "corina.dendrochronologistID")
+    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_GENERICID, dictionary = "securityUser", identifierField = "corina.dendrochronologistID", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME)
     protected String dendrochronologist;
     @XmlElement(required = true)
     protected TridasMeasuringMethod measuringMethod;
