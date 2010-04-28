@@ -1,0 +1,200 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>DendroLibrary</artifactId>
+		<groupId>org.tridas</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>org.tridas</groupId>
+	<artifactId>TridasJLib</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>TridasJavaLibrary</name>
+	<description>Java Classes from the Tridas XML Schema</description>
+	<url>http://www.tridas.org</url>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.jvnet.jaxb2_commons</groupId>
+			<artifactId>runtime</artifactId>
+			<version>0.4.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jvnet.jaxb2_commons</groupId>
+			<artifactId>testing</artifactId>
+			<version>0.4.1</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<!-- === BUILD === -->
+	<organization>
+		<name>TRiDaS</name>
+		<url>http://www.tridas.org</url>
+	</organization>
+	<build>
+		<!--<resources>
+			<resource>
+				 <filtering>false</filtering> 
+				<filtering>true</filtering>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
+
+
+		--><plugins>
+			<!--<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>**/*OnlineTest.java</exclude>
+					</excludes>
+				</configuration>
+			</plugin>-->
+			
+			<plugin>
+				<inherited>true</inherited>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<optimise>true</optimise>
+					<debug>true</debug>
+				</configuration>
+			</plugin>
+
+			<!--<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<configuration>
+					<downloadSources>true</downloadSources>
+				</configuration>
+			</plugin>
+
+			--><!-- JAXB -->
+			<plugin>
+				<groupId>org.jvnet.jaxb2.maven2</groupId>
+				<artifactId>maven-jaxb2-plugin</artifactId>
+				<version>0.7.3</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+
+					<args>
+						<arg>-extension</arg>
+						<arg>-no-header</arg>
+						<arg>-XtoString</arg>
+						<arg>-Xequals</arg>
+						<arg>-XhashCode</arg>
+						<arg>-Xcopyable</arg>
+						<arg>-Xifins</arg>
+						<arg>-Xtridas-annotations</arg>
+						<arg>-Xcollection-setter-injector</arg>
+						<arg>-Xannotate</arg>
+					</args>
+
+					<includeSchemas>
+						<includeSchema>**/*.xsd</includeSchema>
+
+						<includeSchema>**/*.dtd</includeSchema>
+					</includeSchemas>
+					<excludeSchemas>
+						<excludeSchema>gmlsf.xsd</excludeSchema>
+						<excludeSchema>xlink.xsd</excludeSchema>
+					</excludeSchemas>
+					<includeBindings>
+
+						<includeBinding>*.xjb</includeBinding>
+					</includeBindings>
+					<generateDirectory>src/main/generated</generateDirectory>
+
+
+					<extension>true</extension>
+					<!--
+					<strict>true</strict>
+					-->
+					<verbose>true</verbose>
+
+					<plugins>
+						<plugin>
+							<groupId>org.jvnet.jaxb2_commons</groupId>
+							<artifactId>jaxb2-basics</artifactId>
+							<version>0.5.2</version>
+						</plugin>
+					</plugins>
+
+				</configuration>
+				<dependencies>
+
+					<dependency>
+						<groupId>org.jvnet.jaxb2_commons</groupId>
+						<artifactId>jaxb2-basics-runtime</artifactId>
+						<version>0.5.2</version>
+					</dependency>
+
+					<dependency>
+						<groupId>org.jvnet.jaxb2_commons</groupId>
+						<artifactId>xjc-if-ins</artifactId>
+						<version>0.5.3</version>
+					</dependency>
+
+					<dependency>
+						<groupId>org.jvnet.jaxb2_commons</groupId>
+						<artifactId>jaxb2-basics-annotate</artifactId>
+						<version>0.5.2</version>
+					</dependency>
+
+					<dependency>
+						<groupId>org.tridas.schema</groupId>
+						<artifactId>tridasaandi</artifactId>
+						<version>1.0-SNAPSHOT</version>
+					</dependency>
+
+					<dependency>
+						<groupId>org.tridas.schema</groupId>
+						<artifactId>tridas-annotations</artifactId>
+						<version>1.0-SNAPSHOT</version>
+					</dependency>
+
+					<dependency>
+						<groupId>com.sun.tools.xjc</groupId>
+						<artifactId>collection-setter-injector</artifactId>
+						<version>0.1-SNAPSHOT</version>
+					</dependency>
+
+
+					<!--
+						<dependency> <groupId>org.no0ne</groupId>
+						<artifactId>coll-prop</artifactId> <version>0.1-SNAPSHOT</version>
+						</dependency>
+					-->
+
+					<!--
+						<dependency>
+						<groupId>org.jvnet.jaxb2_commons.plugin.annotate</groupId>
+						<artifactId>jaxb2-annotate</artifactId>
+						<version>0.5.1-SNAPSHOT</version> </dependency>
+					-->
+
+					<!--
+						<dependency> <groupId>org.jvnet.annox</groupId>
+						<artifactId>annox-plugin</artifactId>
+						<version>0.4.3-SNAPSHOT</version> </dependency>
+					-->
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+</project>
