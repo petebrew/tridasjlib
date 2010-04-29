@@ -7,6 +7,7 @@ import org.apache.commons.lang.math.NumberUtils;
 import org.tridas.schema.TridasGenericField;
 import org.tridas.schema.TridasObject;
 
+@XmlRootElement(name = "object")
 public class TridasObjectEx extends TridasObject {
 	private static final long serialVersionUID = 1L;
 	
