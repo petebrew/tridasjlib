@@ -1,6 +1,7 @@
 package org.tridas.util;
 
 import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 import org.apache.commons.lang.math.NumberUtils;
