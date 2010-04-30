@@ -136,7 +136,7 @@
 				</configuration>
 				<dependencies>
 
-					<dependency>
+				    <dependency>
 						<groupId>org.jvnet.jaxb2_commons</groupId>
 						<artifactId>jaxb2-basics-runtime</artifactId>
 						<version>0.5.2</version>
@@ -145,31 +145,31 @@
 					<dependency>
 						<groupId>org.jvnet.jaxb2_commons</groupId>
 						<artifactId>xjc-if-ins</artifactId>
-						<version>0.5.3</version>
+						<version>0.5.2</version>
 					</dependency>
 
 					<dependency>
 						<groupId>org.jvnet.jaxb2_commons</groupId>
 						<artifactId>jaxb2-basics-annotate</artifactId>
-						<version>0.5.2</version>
+						<version>0.5.1</version>
 					</dependency>
 
 					<dependency>
 						<groupId>org.tridas.schema</groupId>
 						<artifactId>tridasaandi</artifactId>
-						<version>1.0-SNAPSHOT</version>
+						<version>1.0</version>
 					</dependency>
 
 					<dependency>
 						<groupId>org.tridas.schema</groupId>
 						<artifactId>tridas-annotations</artifactId>
-						<version>1.0-SNAPSHOT</version>
+						<version>1.0</version>
 					</dependency>
 
 					<dependency>
 						<groupId>com.sun.tools.xjc</groupId>
 						<artifactId>collection-setter-injector</artifactId>
-						<version>0.1-SNAPSHOT</version>
+						<version>0.1</version>
 					</dependency>
 
 
@@ -195,11 +195,24 @@
 			</plugin>
 		</plugins>
 	</build>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
+	
 	<repositories>
+	
+	      <!-- Codehaus -->
+        <repository>
+            <id>codehaus</id>
+            <name>Codehaus repository</name>
+            <url>http://repository.codehaus.org</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+
        <repository>
             <id>java.net</id>
             <url>http://download.java.net/maven/1</url>
@@ -222,9 +235,12 @@
                 <checksumPolicy>fail</checksumPolicy>
             </snapshots>
         </repository>
-	</repositories>
+
+    </repositories>
+
 	
-	<pluginRepositories>
+	
+	 <pluginRepositories>
 
         <!-- JAXB related -->
         <pluginRepository>
@@ -240,4 +256,12 @@
         </pluginRepository>
 
     </pluginRepositories>
+
+	
+	
+	
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 </project>
