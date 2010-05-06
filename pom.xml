@@ -28,6 +28,18 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-javadoc-plugin</artifactId>
+		  <version>2.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-source-plugin</artifactId>
+			<version>2.1.1</version>
+			<type>maven-plugin</type>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
 
 	<organization>
@@ -43,19 +55,36 @@
 				<filtering>true</filtering>
 				<directory>src/main/resources</directory>
 			</resource>
-		</resources>
+		</resources>-->
+		
+		<plugins>
 
-
-		--><plugins>
-			<!--<plugin>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>**/*OnlineTest.java</exclude>
-					</excludes>
-				</configuration>
-			</plugin>-->
+			<plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-javadoc-plugin</artifactId>
+			  <executions>
+			    <execution>
+			      <id>attach-javadocs</id>
+			      <goals>
+			        <goal>jar</goal>
+			      </goals>
+			    </execution>
+			  </executions>
+			</plugin>
 			
+			<plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-source-plugin</artifactId>
+			  <executions>
+			    <execution>
+			      <id>attach-sources</id>
+			      <goals>
+			        <goal>jar</goal>
+			      </goals>
+			    </execution>
+			  </executions>
+			</plugin>
+	
 			<plugin>
 				<inherited>true</inherited>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -240,7 +269,7 @@
 
 	
 	
-	 <pluginRepositories>
+	<pluginRepositories>
 
         <!-- JAXB related -->
         <pluginRepository>
@@ -256,10 +285,6 @@
         </pluginRepository>
 
     </pluginRepositories>
-
-	
-	
-	
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
