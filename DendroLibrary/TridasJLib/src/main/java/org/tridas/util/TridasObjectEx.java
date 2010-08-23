@@ -19,7 +19,7 @@ public class TridasObjectEx extends TridasObject {
 	@XmlTransient
 	private Integer childSeriesCount;
 	/** Corina lab code */
-	@XmlTransient
+	//@XmlTransient
 	private String labCode;
 	/** Parent object */
 	@XmlTransient
