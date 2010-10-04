@@ -26,6 +26,8 @@ import org.tridas.annotations.TridasCustomDictionary;
 import org.tridas.annotations.TridasCustomDictionarySortType;
 import org.tridas.annotations.TridasCustomDictionaryType;
 import org.tridas.annotations.TridasEditProperties;
+import org.tridas.interfaces.ITridas;
+import org.tridas.interfaces.ITridasGeneric;
 
 
 /**
@@ -86,7 +88,7 @@ import org.tridas.annotations.TridasEditProperties;
 @XmlRootElement(name = "element")
 public class TridasElement
     extends TridasEntity
-    implements Serializable, CopyTo, Copyable, Equals, HashCode, ToString
+    implements Serializable, CopyTo, Copyable, Equals, HashCode, ToString, ITridas, ITridasGeneric
 {
 
     private final static long serialVersionUID = 1001L;

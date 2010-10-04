@@ -17,13 +17,46 @@ This file is for custom interfaces applied to tridas objects
 			org.tridas.interfaces.ITridasGeneric
 		</ai:interfaces>
 	</bindings>
+	
+	<bindings node="//xs:element[@name='project']/xs:complexType">
+		<ai:interfaces check="false">
+			org.tridas.interfaces.ITridas
+			org.tridas.interfaces.ITridasGeneric
+		</ai:interfaces>
+	</bindings>
+	
+	<bindings node="//xs:element[@name='element']/xs:complexType">
+		<ai:interfaces check="false">
+			org.tridas.interfaces.ITridas
+			org.tridas.interfaces.ITridasGeneric
+		</ai:interfaces>
+	</bindings>
+	<bindings node="//xs:element[@name='sample']/xs:complexType">
+		<ai:interfaces check="false">
+			org.tridas.interfaces.ITridas
+			org.tridas.interfaces.ITridasGeneric
+		</ai:interfaces>
+	</bindings>
+	
+	<bindings node="//xs:element[@name='radius']/xs:complexType">
+		<ai:interfaces check="false">
+			org.tridas.interfaces.ITridas
+			org.tridas.interfaces.ITridasGeneric
+		</ai:interfaces>
+	</bindings>
 
 	<!-- Add ITridasSeries interface to MeasurementSeries and DerivedSeries -->
 	<bindings node="//xs:element[@name='measurementSeries']/xs:complexType">
-		<ai:interfaces check="false">org.tridas.interfaces.ITridasSeries</ai:interfaces>
+		<ai:interfaces check="false">
+			org.tridas.interfaces.ITridasSeries
+			org.tridas.interfaces.ITridas
+		</ai:interfaces>
 	</bindings>
 	<bindings node="//xs:element[@name='derivedSeries']/xs:complexType">
-		<ai:interfaces check="false">org.tridas.interfaces.ITridasDerivedSeries</ai:interfaces>
+		<ai:interfaces check="false">
+			org.tridas.interfaces.ITridasDerivedSeries
+			org.tridas.interfaces.ITridas
+		</ai:interfaces>
 	</bindings>
 
 	<!-- - - - - - - - - - - - - -->

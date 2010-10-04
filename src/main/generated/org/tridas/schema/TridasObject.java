@@ -25,6 +25,8 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
 import org.tridas.annotations.TridasCustomDictionary;
 import org.tridas.annotations.TridasCustomDictionaryType;
 import org.tridas.annotations.TridasEditProperties;
+import org.tridas.interfaces.ITridas;
+import org.tridas.interfaces.ITridasGeneric;
 import org.tridas.util.TridasObjectEx;
 
 
@@ -90,7 +92,7 @@ import org.tridas.util.TridasObjectEx;
 @XmlRootElement(name = "object")
 public class TridasObject
     extends TridasEntity
-    implements Serializable, CopyTo, Copyable, Equals, HashCode, ToString
+    implements Serializable, CopyTo, Copyable, Equals, HashCode, ToString, ITridas, ITridasGeneric
 {
 
     private final static long serialVersionUID = 1001L;
