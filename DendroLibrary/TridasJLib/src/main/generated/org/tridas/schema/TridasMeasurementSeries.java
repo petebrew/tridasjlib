@@ -31,6 +31,7 @@ import org.tridas.annotations.TridasCustomDictionary;
 import org.tridas.annotations.TridasCustomDictionarySortType;
 import org.tridas.annotations.TridasCustomDictionaryType;
 import org.tridas.annotations.TridasEditProperties;
+import org.tridas.interfaces.ITridas;
 import org.tridas.interfaces.ITridasSeries;
 
 
@@ -85,7 +86,7 @@ import org.tridas.interfaces.ITridasSeries;
 })
 @XmlRootElement(name = "measurementSeries")
 public class TridasMeasurementSeries
-    implements Serializable, CopyTo, Copyable, Equals, HashCode, ToString, ITridasSeries
+    implements Serializable, CopyTo, Copyable, Equals, HashCode, ToString, ITridas, ITridasSeries
 {
 
     private final static long serialVersionUID = 1001L;
@@ -98,9 +99,9 @@ public class TridasMeasurementSeries
     protected Date measuringDate;
     @TridasEditProperties(machineOnly = true)
     protected TridasWoodCompleteness woodCompleteness;
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_GENERICID, dictionary = "securityUser", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME, identifierField = "corina.analystID")
+    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_GENERICID, dictionary = "securityUser", identifierField = "corina.analystID", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME)
     protected String analyst;
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_GENERICID, dictionary = "securityUser", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME, identifierField = "corina.dendrochronologistID")
+    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_GENERICID, dictionary = "securityUser", identifierField = "corina.dendrochronologistID", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME)
     protected String dendrochronologist;
     @XmlElement(required = true)
     protected TridasMeasuringMethod measuringMethod;

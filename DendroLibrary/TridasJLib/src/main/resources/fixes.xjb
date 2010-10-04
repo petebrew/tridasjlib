@@ -35,6 +35,10 @@
 		<!-- Rename object element to custom class -->
 		<jaxb:bindings node="//xs:element[@name='object']">
 			<jaxb:class implClass="org.tridas.util.TridasObjectEx" />
+			<ai:interfaces check="false">
+				org.tridas.interfaces.ITridas
+				org.tridas.interfaces.ITridasGeneric
+			</ai:interfaces>
 		</jaxb:bindings>
 						
 		<!-- Fix some unconvertable strings -->

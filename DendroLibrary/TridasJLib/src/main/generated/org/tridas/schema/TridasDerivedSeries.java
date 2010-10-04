@@ -31,6 +31,7 @@ import org.tridas.annotations.TridasCustomDictionary;
 import org.tridas.annotations.TridasCustomDictionarySortType;
 import org.tridas.annotations.TridasCustomDictionaryType;
 import org.tridas.annotations.TridasEditProperties;
+import org.tridas.interfaces.ITridas;
 import org.tridas.interfaces.ITridasDerivedSeries;
 
 
@@ -91,7 +92,7 @@ import org.tridas.interfaces.ITridasDerivedSeries;
 })
 @XmlRootElement(name = "derivedSeries")
 public class TridasDerivedSeries
-    implements Serializable, CopyTo, Copyable, Equals, HashCode, ToString, ITridasDerivedSeries
+    implements Serializable, CopyTo, Copyable, Equals, HashCode, ToString, ITridas, ITridasDerivedSeries
 {
 
     private final static long serialVersionUID = 1001L;
@@ -111,7 +112,7 @@ public class TridasDerivedSeries
     protected String objective;
     @TridasEditProperties(readOnly = true)
     protected String standardizingMethod;
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_GENERICID, dictionary = "securityUser", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME, identifierField = "corina.authorID")
+    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_GENERICID, dictionary = "securityUser", identifierField = "corina.authorID", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME)
     protected String author;
     protected String version;
     @TridasEditProperties(machineOnly = true)

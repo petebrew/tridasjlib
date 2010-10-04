@@ -24,6 +24,8 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBHashCodeBuilder;
 import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
 import org.tridas.annotations.TridasCustomDictionary;
 import org.tridas.annotations.TridasCustomDictionaryType;
+import org.tridas.interfaces.ITridas;
+import org.tridas.interfaces.ITridasGeneric;
 
 
 /**
@@ -72,7 +74,7 @@ import org.tridas.annotations.TridasCustomDictionaryType;
 @XmlRootElement(name = "sample")
 public class TridasSample
     extends TridasEntity
-    implements Serializable, CopyTo, Copyable, Equals, HashCode, ToString
+    implements Serializable, CopyTo, Copyable, Equals, HashCode, ToString, ITridas, ITridasGeneric
 {
 
     private final static long serialVersionUID = 1001L;
