@@ -17,14 +17,14 @@
 
 		<dependency>
 			<groupId>org.jvnet.jaxb2_commons</groupId>
-			<artifactId>jaxb2-basics-runtime</artifactId>
-			<version>0.5.1</version>
+			<artifactId>runtime</artifactId>
+			<version>0.4.1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.jvnet.jaxb2_commons</groupId>
-			<artifactId>jaxb2-basics-testing</artifactId>
-			<version>0.5.1</version>
+			<artifactId>testing</artifactId>
+			<version>0.4.1</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -217,31 +217,7 @@
 					-->
 				</dependencies>
 			</plugin>
-			
-			
-					     <!--  Uncomment this plugin to include *all* dependencies into this jar -->
-		     <plugin>
-			    <groupId>org.apache.maven.plugins</groupId>
-			    <artifactId>maven-dependency-plugin</artifactId>
-			    <executions>
-			     <execution>
-			      <id>unpack-dependencies</id>
-			      <phase>package</phase>
-			      <goals>
-			       <goal>unpack-dependencies</goal>
-			      </goals>
-			     </execution>
-			    </executions>
-			   </plugin>
-			
 		</plugins>
-		
-		  <resources>
-		   <resource>
-		    <directory>${basedir}/target/dependency</directory>
-		   </resource>
-		  </resources>
-		
 	</build>
 	
 	<repositories>
