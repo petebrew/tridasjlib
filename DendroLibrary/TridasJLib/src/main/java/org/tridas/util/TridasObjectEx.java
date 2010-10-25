@@ -19,8 +19,8 @@ public class TridasObjectEx extends TridasObject {
 	@XmlTransient
 	private Integer childSeriesCount;
 	/** Corina lab code */
-	//@XmlTransient
-	private String labCode;
+	@XmlTransient
+	private String labCodeBlah;
 	/** Parent object */
 	@XmlTransient
 	private TridasObjectEx parentObject;
@@ -54,7 +54,7 @@ public class TridasObjectEx extends TridasObject {
 	 * @return true if getLabCode would return a valid labcode
 	 */
 	public boolean hasLabCode() {
-		return (labCode != null);
+		return (labCodeBlah != null);
 	}
 	
 	/**
@@ -81,7 +81,7 @@ public class TridasObjectEx extends TridasObject {
 	 */
 	@XmlTransient
 	public String getLabCode() {
-		return (labCode != null) ? labCode : "(n/a)";
+		return (labCodeBlah != null) ? labCodeBlah : "(n/a)";
 	}
 	
 	/**
@@ -101,10 +101,10 @@ public class TridasObjectEx extends TridasObject {
 	 * @return A string in the form of '[CODE] title'
 	 */
 	public String toTitleString() {
-		if(labCode == null || labCode.equals(title))
+		if(labCodeBlah == null || labCodeBlah.equals(title))
 			return title;
 		
-		return "[" + labCode + "] " + title;
+		return "[" + labCodeBlah + "] " + title;
 	}
 	
 	/**
@@ -119,10 +119,10 @@ public class TridasObjectEx extends TridasObject {
 			
 		returnStr = "[" + getParentLabCode() + "] ";
 		
-		if(labCode == null || labCode.equals(title))
+		if(labCodeBlah == null || labCodeBlah.equals(title))
 			returnStr += title;
 		else
-			returnStr += "[" + labCode + "] " + title;
+			returnStr += "[" + labCodeBlah + "] " + title;
 		 
 		return returnStr;
 	}
@@ -147,7 +147,7 @@ public class TridasObjectEx extends TridasObject {
 
 				// handle lab code
 				if ("corina.objectLabCode".equals(fieldName)) {
-					this.labCode = f.getValue();
+					this.labCodeBlah = f.getValue();
 				}
 				// series count
 				else if ("corina.countOfChildSeries".equals(fieldName)) {
