@@ -36,14 +36,14 @@ import org.tridas.annotations.TridasEditProperties;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}ringCount" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}averageRingWidth" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}nrOfUnmeasuredInnerRings" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}nrOfUnmeasuredOuterRings" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}pith"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}heartwood"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}sapwood"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}bark"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}ringCount" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}averageRingWidth" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}nrOfUnmeasuredInnerRings" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}nrOfUnmeasuredOuterRings" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}pith"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}heartwood"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}sapwood"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}bark"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

@@ -36,20 +36,17 @@ import org.tridas.interfaces.ITridasGeneric;
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.tridas.org/1.2.1}tridasEntity">
+ *     &lt;extension base="{http://www.tridas.org/1.2.2}tridasEntity">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}type"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}description" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}file" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}samplingDate" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}position" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}state" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}knots" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}genericField" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;choice>
- *           &lt;element ref="{http://www.tridas.org/1.2.1}radius" maxOccurs="unbounded" minOccurs="0"/>
- *           &lt;element ref="{http://www.tridas.org/1.2.1}radiusPlaceholder" minOccurs="0"/>
- *         &lt;/choice>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}type"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}description" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}file" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}samplingDate" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}position" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}state" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}knots" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}genericField" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}radius" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -68,7 +65,6 @@ import org.tridas.interfaces.ITridasGeneric;
     "state",
     "knots",
     "genericFields",
-    "radiusPlaceholder",
     "radiuses"
 })
 @XmlRootElement(name = "sample")
@@ -90,7 +86,6 @@ public class TridasSample
     protected Boolean knots;
     @XmlElement(name = "genericField")
     protected List<TridasGenericField> genericFields;
-    protected TridasRadiusPlaceholder radiusPlaceholder;
     @XmlElement(name = "radius")
     protected List<TridasRadius> radiuses;
 
@@ -337,34 +332,6 @@ public class TridasSample
     }
 
     /**
-     * Gets the value of the radiusPlaceholder property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TridasRadiusPlaceholder }
-     *     
-     */
-    public TridasRadiusPlaceholder getRadiusPlaceholder() {
-        return radiusPlaceholder;
-    }
-
-    /**
-     * Sets the value of the radiusPlaceholder property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TridasRadiusPlaceholder }
-     *     
-     */
-    public void setRadiusPlaceholder(TridasRadiusPlaceholder value) {
-        this.radiusPlaceholder = value;
-    }
-
-    public boolean isSetRadiusPlaceholder() {
-        return (this.radiusPlaceholder!= null);
-    }
-
-    /**
      * Gets the value of the radiuses property.
      * 
      * <p>
@@ -444,11 +411,6 @@ public class TridasSample
             toStringBuilder.append("genericFields", theGenericFields);
         }
         {
-            TridasRadiusPlaceholder theRadiusPlaceholder;
-            theRadiusPlaceholder = this.getRadiusPlaceholder();
-            toStringBuilder.append("radiusPlaceholder", theRadiusPlaceholder);
-        }
-        {
             List<TridasRadius> theRadiuses;
             theRadiuses = this.getRadiuses();
             toStringBuilder.append("radiuses", theRadiuses);
@@ -479,7 +441,6 @@ public class TridasSample
         equalsBuilder.append(this.getState(), that.getState());
         equalsBuilder.append(this.isKnots(), that.isKnots());
         equalsBuilder.append(this.getGenericFields(), that.getGenericFields());
-        equalsBuilder.append(this.getRadiusPlaceholder(), that.getRadiusPlaceholder());
         equalsBuilder.append(this.getRadiuses(), that.getRadiuses());
     }
 
@@ -505,7 +466,6 @@ public class TridasSample
         hashCodeBuilder.append(this.getState());
         hashCodeBuilder.append(this.isKnots());
         hashCodeBuilder.append(this.getGenericFields());
-        hashCodeBuilder.append(this.getRadiusPlaceholder());
         hashCodeBuilder.append(this.getRadiuses());
     }
 
@@ -587,14 +547,6 @@ public class TridasSample
             uniqueGenericFieldsl.addAll(copyGenericFields);
         } else {
             copy.unsetGenericFields();
-        }
-        if (this.isSetRadiusPlaceholder()) {
-            TridasRadiusPlaceholder sourceRadiusPlaceholder;
-            sourceRadiusPlaceholder = this.getRadiusPlaceholder();
-            TridasRadiusPlaceholder copyRadiusPlaceholder = ((TridasRadiusPlaceholder) copyBuilder.copy(sourceRadiusPlaceholder));
-            copy.setRadiusPlaceholder(copyRadiusPlaceholder);
-        } else {
-            copy.radiusPlaceholder = null;
         }
         if (this.isSetRadiuses()) {
             List<TridasRadius> sourceRadiuses;

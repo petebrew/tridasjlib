@@ -35,12 +35,12 @@ import org.tridas.annotations.TridasEditProperties;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}variable"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}variable"/>
  *         &lt;choice>
- *           &lt;element ref="{http://www.tridas.org/1.2.1}unitless"/>
- *           &lt;element ref="{http://www.tridas.org/1.2.1}unit"/>
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}unitless"/>
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}unit"/>
  *         &lt;/choice>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}value" maxOccurs="unbounded"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}value" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -67,7 +67,7 @@ public class TridasValues
     protected TridasVariable variable;
     protected TridasUnit unit;
     protected TridasUnitless unitless;
-    @XmlElement(name = "value", required = true)
+    @XmlElement(name = "value")
     protected List<TridasValue> values;
 
     /**

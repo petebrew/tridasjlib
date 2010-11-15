@@ -36,12 +36,12 @@ import org.tridas.adapters.IntegerAdapter;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}nrOfSapwoodRings" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}lastRingUnderBark" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}missingSapwoodRingsToBark" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}missingSapwoodRingsToBarkFoundation" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}nrOfSapwoodRings" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}lastRingUnderBark" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}missingSapwoodRingsToBark" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}missingSapwoodRingsToBarkFoundation" minOccurs="0"/>
  *       &lt;/sequence>
- *       &lt;attribute name="presence" use="required" type="{http://www.tridas.org/1.2.1}complexPresenceAbsence" />
+ *       &lt;attribute name="presence" use="required" type="{http://www.tridas.org/1.2.2}complexPresenceAbsence" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>

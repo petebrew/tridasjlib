@@ -41,24 +41,24 @@ import org.tridas.annotations.TridasEditProperties;
  * <pre>
  * &lt;complexType name="baseSeries">
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.tridas.org/1.2.1}tridasEntity">
+ *     &lt;extension base="{http://www.tridas.org/1.2.2}tridasEntity">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}measuringDate" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}derivationDate" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}woodCompleteness" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}analyst" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}dendrochronologist" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}measuringMethod" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}type" minOccurs="0"/>
- *         &lt;element name="linkSeries" type="{http://www.tridas.org/1.2.1}seriesLinks" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}objective" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}standardizingMethod" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}author" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}version" minOccurs="0"/>
- *         &lt;group ref="{http://www.tridas.org/1.2.1}interpretationType" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}location" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}genericField" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}values" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}measuringDate" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}derivationDate" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}woodCompleteness" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}analyst" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}dendrochronologist" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}measuringMethod" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}type" minOccurs="0"/>
+ *         &lt;element name="linkSeries" type="{http://www.tridas.org/1.2.2}seriesLinks" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}objective" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}standardizingMethod" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}author" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}version" minOccurs="0"/>
+ *         &lt;group ref="{http://www.tridas.org/1.2.2}interpretationType" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}location" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}genericField" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}values" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}ID" />
  *     &lt;/extension>

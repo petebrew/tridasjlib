@@ -35,12 +35,12 @@ import org.tridas.interfaces.ITridasGeneric;
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.tridas.org/1.2.1}tridasEntity">
+ *     &lt;extension base="{http://www.tridas.org/1.2.2}tridasEntity">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}woodCompleteness" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}azimuth" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}genericField" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}measurementSeries" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}woodCompleteness" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}azimuth" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}genericField" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}measurementSeries" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

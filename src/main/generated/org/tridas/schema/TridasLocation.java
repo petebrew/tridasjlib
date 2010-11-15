@@ -4,7 +4,6 @@ package org.tridas.schema;
 import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import org.apache.commons.lang.builder.EqualsBuilder;
@@ -32,11 +31,11 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}locationGeometry"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}locationType" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}locationPrecision" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}locationComment" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}address" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}locationGeometry" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}locationType" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}locationPrecision" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}locationComment" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}address" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -59,7 +58,6 @@ public class TridasLocation
 {
 
     private final static long serialVersionUID = 1001L;
-    @XmlElement(required = true)
     protected TridasLocationGeometry locationGeometry;
     protected NormalTridasLocationType locationType;
     protected String locationPrecision;

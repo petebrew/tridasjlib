@@ -35,7 +35,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}identifier" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}identifier" minOccurs="0"/>
  *         &lt;element name="name">
  *           &lt;complexType>
  *             &lt;simpleContent>
@@ -45,7 +45,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;/simpleContent>
  *           &lt;/complexType>
  *         &lt;/element>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}address"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}address"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
