@@ -39,7 +39,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}category" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}category" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -50,7 +50,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}type" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}type" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -61,7 +61,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}type" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}type" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -72,7 +72,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}type" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}type" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -83,7 +83,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}type" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}type" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -94,7 +94,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}type" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}type" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -105,7 +105,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}taxon" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}taxon" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -116,7 +116,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}shape" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}shape" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -127,7 +127,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}measuringMethod" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}measuringMethod" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -138,7 +138,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}variable" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}variable" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -149,7 +149,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}remark" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}remark" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -160,7 +160,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}locationType" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}locationType" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -171,7 +171,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://www.tridas.org/1.2.1}unit" maxOccurs="unbounded"/>
+ *                   &lt;element ref="{http://www.tridas.org/1.2.2}unit" maxOccurs="unbounded"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -847,7 +847,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}type" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}type" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1003,7 +1003,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}shape" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}shape" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1159,7 +1159,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}taxon" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}taxon" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1315,7 +1315,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}type" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}type" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1471,7 +1471,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}unit" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}unit" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1627,7 +1627,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}locationType" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}locationType" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1783,7 +1783,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}measuringMethod" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}measuringMethod" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -1939,7 +1939,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}type" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}type" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -2095,7 +2095,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}category" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}category" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -2114,7 +2114,7 @@ public class TridasVocabulary
 
         private final static long serialVersionUID = 1001L;
         @XmlElement(name = "category", required = true)
-        protected List<TridasCategory> categories;
+        protected List<ControlledVoc> categories;
 
         /**
          * Gets the value of the categories property.
@@ -2134,13 +2134,13 @@ public class TridasVocabulary
          * 
          * <p>
          * Objects of the following type(s) are allowed in the list
-         * {@link TridasCategory }
+         * {@link ControlledVoc }
          * 
          * 
          */
-        public List<TridasCategory> getCategories() {
+        public List<ControlledVoc> getCategories() {
             if (categories == null) {
-                categories = new ArrayList<TridasCategory>();
+                categories = new ArrayList<ControlledVoc>();
             }
             return this.categories;
         }
@@ -2155,7 +2155,7 @@ public class TridasVocabulary
 
         public void toString(ToStringBuilder toStringBuilder) {
             {
-                List<TridasCategory> theCategories;
+                List<ControlledVoc> theCategories;
                 theCategories = this.getCategories();
                 toStringBuilder.append("categories", theCategories);
             }
@@ -2204,12 +2204,12 @@ public class TridasVocabulary
         public Object copyTo(Object target, CopyBuilder copyBuilder) {
             final TridasVocabulary.ProjectCategory copy = ((target == null)?((TridasVocabulary.ProjectCategory) createCopy()):((TridasVocabulary.ProjectCategory) target));
             if (this.isSetCategories()) {
-                List<TridasCategory> sourceCategories;
+                List<ControlledVoc> sourceCategories;
                 sourceCategories = this.getCategories();
                 @SuppressWarnings("unchecked")
-                List<TridasCategory> copyCategories = ((List<TridasCategory> ) copyBuilder.copy(sourceCategories));
+                List<ControlledVoc> copyCategories = ((List<ControlledVoc> ) copyBuilder.copy(sourceCategories));
                 copy.unsetCategories();
-                List<TridasCategory> uniqueCategoriesl = copy.getCategories();
+                List<ControlledVoc> uniqueCategoriesl = copy.getCategories();
                 uniqueCategoriesl.addAll(copyCategories);
             } else {
                 copy.unsetCategories();
@@ -2231,10 +2231,10 @@ public class TridasVocabulary
          * 
          * @param categories
          *     allowed object is
-         *     {@link TridasCategory }
+         *     {@link ControlledVoc }
          *     
          */
-        public void setCategories(List<TridasCategory> categories) {
+        public void setCategories(List<ControlledVoc> categories) {
             this.categories = categories;
         }
 
@@ -2251,7 +2251,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}type" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}type" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -2407,7 +2407,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}type" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}type" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -2563,7 +2563,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}remark" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}remark" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -2719,7 +2719,7 @@ public class TridasVocabulary
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://www.tridas.org/1.2.1}variable" maxOccurs="unbounded"/>
+     *         &lt;element ref="{http://www.tridas.org/1.2.2}variable" maxOccurs="unbounded"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>

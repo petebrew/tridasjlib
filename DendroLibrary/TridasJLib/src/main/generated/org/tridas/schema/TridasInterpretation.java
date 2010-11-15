@@ -35,14 +35,14 @@ import org.tridas.annotations.TridasEditProperties;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}dating" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}firstYear" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}lastYear" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}datingReference" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}statFoundation" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}pithYear" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}deathYear" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}provenance" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}dating" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}firstYear" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}lastYear" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}datingReference" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}statFoundation" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}pithYear" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}deathYear" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}provenance" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

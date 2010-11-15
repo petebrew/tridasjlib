@@ -33,7 +33,7 @@ import org.tridas.annotations.TridasEditProperties;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="series" type="{http://www.tridas.org/1.2.1}seriesLink" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="series" type="{http://www.tridas.org/1.2.2}seriesLink" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

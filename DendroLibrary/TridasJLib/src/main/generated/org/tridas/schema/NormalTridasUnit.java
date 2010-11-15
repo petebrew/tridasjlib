@@ -16,6 +16,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     &lt;enumeration value="micrometres"/>
  *     &lt;enumeration value="1/100th millimetres"/>
+ *     &lt;enumeration value="1/50th millimetres"/>
+ *     &lt;enumeration value="1/20th millimetres"/>
  *     &lt;enumeration value="1/10th millimetres"/>
  *     &lt;enumeration value="millimetres"/>
  *     &lt;enumeration value="centimetres"/>
@@ -33,6 +35,10 @@ public enum NormalTridasUnit {
     MICROMETRES("micrometres"),
     @XmlEnumValue("1/100th millimetres")
     HUNDREDTH_MM("1/100th millimetres"),
+    @XmlEnumValue("1/50th millimetres")
+    FIFTIETH_MM("1/50th millimetres"),
+    @XmlEnumValue("1/20th millimetres")
+    TWENTIETH_MM("1/20th millimetres"),
     @XmlEnumValue("1/10th millimetres")
     TENTH_MM("1/10th millimetres"),
     @XmlEnumValue("millimetres")

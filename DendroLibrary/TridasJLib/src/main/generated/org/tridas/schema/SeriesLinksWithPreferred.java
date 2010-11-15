@@ -30,7 +30,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="preferredSeries" type="{http://www.tridas.org/1.2.1}seriesLink" minOccurs="0"/>
+ *         &lt;element name="preferredSeries" type="{http://www.tridas.org/1.2.2}seriesLink" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

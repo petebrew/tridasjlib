@@ -28,7 +28,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
 
 /**
  * 
- * 				A controlled vocabulary is used to limit users to a pick list of values
+ * 				A controlled vocabulary is used to limit users to a pick list of values.
  * 			
  * 
  * <p>Java class for controlledVoc complex type.
@@ -55,12 +55,11 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
     "value"
 })
 @XmlSeeAlso({
-    TridasCategory.class,
-    TridasRemark.class,
-    TridasVariable.class,
     TridasMeasuringMethod.class,
+    TridasShape.class,
     TridasUnit.class,
-    TridasShape.class
+    TridasVariable.class,
+    TridasRemark.class
 })
 public class ControlledVoc
     implements Serializable, CopyTo, Copyable, Equals, HashCode, ToString

@@ -38,25 +38,25 @@ import org.tridas.interfaces.ITridasGeneric;
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.tridas.org/1.2.1}tridasEntity">
+ *     &lt;extension base="{http://www.tridas.org/1.2.2}tridasEntity">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}type" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}description" minOccurs="0"/>
- *         &lt;element name="linkSeries" type="{http://www.tridas.org/1.2.1}seriesLinksWithPreferred" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}file" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}taxon"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}shape" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}dimensions" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}authenticity" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}location" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}processing" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}marks" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}altitude" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}slope" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}soil" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}bedrock" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}genericField" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}sample" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}type" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}description" minOccurs="0"/>
+ *         &lt;element name="linkSeries" type="{http://www.tridas.org/1.2.2}seriesLinksWithPreferred" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}file" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}taxon"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}shape" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}dimensions" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}authenticity" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}location" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}processing" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}marks" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}altitude" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}slope" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}soil" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}bedrock" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}genericField" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}sample" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>

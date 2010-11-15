@@ -35,22 +35,22 @@ import org.tridas.util.TridasObjectEx;
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
- *     &lt;extension base="{http://www.tridas.org/1.2.1}tridasEntity">
+ *     &lt;extension base="{http://www.tridas.org/1.2.2}tridasEntity">
  *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}type" maxOccurs="unbounded"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}description" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}file" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}laboratory" maxOccurs="unbounded"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}category"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}investigator"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}period"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}requestDate" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}commissioner" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}reference" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}research" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}genericField" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}object" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.1}derivedSeries" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}type" maxOccurs="unbounded"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}description" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}file" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}laboratory" maxOccurs="unbounded"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}category"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}investigator"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}period"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}requestDate" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}commissioner" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}reference" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}research" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}genericField" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}object" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}derivedSeries" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -91,7 +91,7 @@ public class TridasProject
     @XmlElement(name = "laboratory", required = true)
     protected List<TridasLaboratory> laboratories;
     @XmlElement(required = true)
-    protected TridasCategory category;
+    protected ControlledVoc category;
     @XmlElement(required = true)
     protected String investigator;
     @XmlElement(required = true)
@@ -252,10 +252,10 @@ public class TridasProject
      * 
      * @return
      *     possible object is
-     *     {@link TridasCategory }
+     *     {@link ControlledVoc }
      *     
      */
-    public TridasCategory getCategory() {
+    public ControlledVoc getCategory() {
         return category;
     }
 
@@ -264,10 +264,10 @@ public class TridasProject
      * 
      * @param value
      *     allowed object is
-     *     {@link TridasCategory }
+     *     {@link ControlledVoc }
      *     
      */
-    public void setCategory(TridasCategory value) {
+    public void setCategory(ControlledVoc value) {
         this.category = value;
     }
 
@@ -595,7 +595,7 @@ public class TridasProject
             toStringBuilder.append("laboratories", theLaboratories);
         }
         {
-            TridasCategory theCategory;
+            ControlledVoc theCategory;
             theCategory = this.getCategory();
             toStringBuilder.append("category", theCategory);
         }
@@ -759,9 +759,9 @@ public class TridasProject
             copy.unsetLaboratories();
         }
         if (this.isSetCategory()) {
-            TridasCategory sourceCategory;
+            ControlledVoc sourceCategory;
             sourceCategory = this.getCategory();
-            TridasCategory copyCategory = ((TridasCategory) copyBuilder.copy(sourceCategory));
+            ControlledVoc copyCategory = ((ControlledVoc) copyBuilder.copy(sourceCategory));
             copy.setCategory(copyCategory);
         } else {
             copy.category = null;

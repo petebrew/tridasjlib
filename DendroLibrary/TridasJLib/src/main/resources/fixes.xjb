@@ -45,6 +45,8 @@
 		<jaxb:bindings node="//xs:simpleType[@name='normalTridasUnit']">
 			<jaxb:typesafeEnumClass>
 				<jaxb:typesafeEnumMember value="1/100th millimetres" name="HUNDREDTH_MM" />
+				<jaxb:typesafeEnumMember value="1/50th millimetres" name="FIFTIETH_MM" />
+				<jaxb:typesafeEnumMember value="1/20th millimetres" name="TWENTIETH_MM" />
 				<jaxb:typesafeEnumMember value="1/10th millimetres" name="TENTH_MM" />
 			</jaxb:typesafeEnumClass>
 		</jaxb:bindings>
