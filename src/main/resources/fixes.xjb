@@ -68,14 +68,38 @@
 			<jaxb:typesafeEnumClass>
 				<jaxb:typesafeEnumMember value="Fire damage" name="FIRE_DAMAGE" />
 				<jaxb:typesafeEnumMember value="Frost damage" name="FROST_DAMAGE" />
-				<jaxb:typesafeEnumMember value="Crack" name="CRACK" />
 				<jaxb:typesafeEnumMember value="False ring(s)" name="FALSE_RINGS" />
 				<jaxb:typesafeEnumMember value="Compression wood" name="COMPRESSION_WOOD" />
 				<jaxb:typesafeEnumMember value="Tension wood" name="TENSION_WOOD" />
 				<jaxb:typesafeEnumMember value="Traumatic ducts" name="TRAUMATIC_DUCTS" />
 				<jaxb:typesafeEnumMember value="Unspecified injury" name="UNSPECIFIED_INJURY" />
 			</jaxb:typesafeEnumClass>
-		</jaxb:bindings>				
+		</jaxb:bindings>		
+		
+		<jaxb:bindings node="//xs:simpleType[@name='normalTridasLocationType']">
+			<jaxb:typesafeEnumClass>
+				<jaxb:typesafeEnumMember value="Growth location" name="GROWTH_LOCATION" />
+				<jaxb:typesafeEnumMember value="Location of use (static)" name="LOCATION_OF_USE_STATIC" />
+				<jaxb:typesafeEnumMember value="Location of use (mobile)" name="LOCATION_OF_USE_MOBILE" />
+				<jaxb:typesafeEnumMember value="Current location" name="CURRENT_LOCATION" />
+				<jaxb:typesafeEnumMember value="Manufacture location" name="MANUFACTURE_LOCATION" />
+			</jaxb:typesafeEnumClass>
+		</jaxb:bindings>		
+		
+		<jaxb:bindings node="//xs:simpleType[@name='normalTridasMeasuringMethod']">
+			<jaxb:typesafeEnumClass>
+				<jaxb:typesafeEnumMember value="Measuring platform" name="MEASURING_PLATFORM" />
+				<jaxb:typesafeEnumMember value="Hand lens and graticule" name="HAND_LENS_AND_GRATICULE" />
+				<jaxb:typesafeEnumMember value="Onscreen measuring" name="ONSCREEN_MEASURING" />
+				<jaxb:typesafeEnumMember value="Visual estimate" name="VISUAL_ESTIMATE" />
+			</jaxb:typesafeEnumClass>
+		</jaxb:bindings>
+		
+		<jaxb:bindings node="//xs:simpleType[@name='normalTridasDatingType']">
+			<jaxb:typesafeEnumClass>
+				<jaxb:typesafeEnumMember value="Dated with uncertainty" name="DATED_WITH_UNCERTAINTY" />
+			</jaxb:typesafeEnumClass>
+		</jaxb:bindings>	
 	</jaxb:bindings>
 
 
