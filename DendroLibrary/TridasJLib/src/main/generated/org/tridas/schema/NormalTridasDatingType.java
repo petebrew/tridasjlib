@@ -30,7 +30,7 @@ public enum NormalTridasDatingType {
     @XmlEnumValue("Absolute")
     ABSOLUTE("Absolute"),
     @XmlEnumValue("Dated with uncertainty")
-    DATED___WITH___UNCERTAINTY("Dated with uncertainty"),
+    DATED_WITH_UNCERTAINTY("Dated with uncertainty"),
     @XmlEnumValue("Relative")
     RELATIVE("Relative"),
     @XmlEnumValue("Radiocarbon")

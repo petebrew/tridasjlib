@@ -29,15 +29,15 @@ import javax.xml.bind.annotation.XmlType;
 public enum NormalTridasLocationType {
 
     @XmlEnumValue("Growth location")
-    GROWTH___LOCATION("Growth location"),
+    GROWTH_LOCATION("Growth location"),
     @XmlEnumValue("Location of use (static)")
-    LOCATION___OF___USE____STATIC__("Location of use (static)"),
+    LOCATION_OF_USE_STATIC("Location of use (static)"),
     @XmlEnumValue("Location of use (mobile)")
-    LOCATION___OF___USE____MOBILE__("Location of use (mobile)"),
+    LOCATION_OF_USE_MOBILE("Location of use (mobile)"),
     @XmlEnumValue("Current location")
-    CURRENT___LOCATION("Current location"),
+    CURRENT_LOCATION("Current location"),
     @XmlEnumValue("Manufacture location")
-    MANUFACTURE___LOCATION("Manufacture location");
+    MANUFACTURE_LOCATION("Manufacture location");
     private final String value;
 
     NormalTridasLocationType(String v) {
