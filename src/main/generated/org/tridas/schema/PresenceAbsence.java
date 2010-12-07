@@ -16,6 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *     &lt;enumeration value="present"/>
  *     &lt;enumeration value="absent"/>
+ *     &lt;enumeration value="unknown"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -28,7 +29,9 @@ public enum PresenceAbsence {
     @XmlEnumValue("present")
     PRESENT("present"),
     @XmlEnumValue("absent")
-    ABSENT("absent");
+    ABSENT("absent"),
+    @XmlEnumValue("unknown")
+    UNKNOWN("unknown");
     private final String value;
 
     PresenceAbsence(String v) {
