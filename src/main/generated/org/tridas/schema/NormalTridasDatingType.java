@@ -14,10 +14,10 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;simpleType name="normalTridasDatingType">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Absolute"/>
- *     &lt;enumeration value="Dated with uncertainty"/>
- *     &lt;enumeration value="Relative"/>
- *     &lt;enumeration value="Radiocarbon"/>
+ *     &lt;enumeration value="absolute"/>
+ *     &lt;enumeration value="dated with uncertainty"/>
+ *     &lt;enumeration value="relative"/>
+ *     &lt;enumeration value="radiocarbon"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -27,14 +27,14 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum NormalTridasDatingType {
 
-    @XmlEnumValue("Absolute")
-    ABSOLUTE("Absolute"),
-    @XmlEnumValue("Dated with uncertainty")
-    DATED_WITH_UNCERTAINTY("Dated with uncertainty"),
-    @XmlEnumValue("Relative")
-    RELATIVE("Relative"),
-    @XmlEnumValue("Radiocarbon")
-    RADIOCARBON("Radiocarbon");
+    @XmlEnumValue("absolute")
+    ABSOLUTE("absolute"),
+    @XmlEnumValue("dated with uncertainty")
+    DATED_WITH_UNCERTAINTY("dated with uncertainty"),
+    @XmlEnumValue("relative")
+    RELATIVE("relative"),
+    @XmlEnumValue("radiocarbon")
+    RADIOCARBON("radiocarbon");
     private final String value;
 
     NormalTridasDatingType(String v) {

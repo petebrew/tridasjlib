@@ -14,25 +14,25 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;simpleType name="normalTridasShape">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Whole section"/>
- *     &lt;enumeration value="Half section"/>
- *     &lt;enumeration value="Third section"/>
- *     &lt;enumeration value="Quarter section"/>
- *     &lt;enumeration value="Wedge where radius is smaller than circumference"/>
- *     &lt;enumeration value="Wedge where radius equals the circumference"/>
- *     &lt;enumeration value="Wedge where radius is bigger than the circumference"/>
- *     &lt;enumeration value="Beam straightened on one side"/>
- *     &lt;enumeration value="Squared beam from whole section"/>
- *     &lt;enumeration value="Squared beam from half section"/>
- *     &lt;enumeration value="Squared beam from quarter section"/>
- *     &lt;enumeration value="Plank cut on one side"/>
- *     &lt;enumeration value="Radial plank through pith"/>
- *     &lt;enumeration value="Radial plank up to pith"/>
- *     &lt;enumeration value="Tangential plank not including pith with breadth larger than a quarter section"/>
- *     &lt;enumeration value="Plank not including pith with breadth smaller than a quarter section"/>
- *     &lt;enumeration value="Small part of section"/>
- *     &lt;enumeration value="Part of undetermined section"/>
- *     &lt;enumeration value="Unknown"/>
+ *     &lt;enumeration value="whole section"/>
+ *     &lt;enumeration value="half section"/>
+ *     &lt;enumeration value="third section"/>
+ *     &lt;enumeration value="quarter section"/>
+ *     &lt;enumeration value="wedge where radius is smaller than circumference"/>
+ *     &lt;enumeration value="wedge where radius equals the circumference"/>
+ *     &lt;enumeration value="wedge where radius is bigger than the circumference"/>
+ *     &lt;enumeration value="beam straightened on one side"/>
+ *     &lt;enumeration value="squared beam from whole section"/>
+ *     &lt;enumeration value="squared beam from half section"/>
+ *     &lt;enumeration value="squared beam from quarter section"/>
+ *     &lt;enumeration value="plank cut on one side"/>
+ *     &lt;enumeration value="radial plank through pith"/>
+ *     &lt;enumeration value="radial plank up to pith"/>
+ *     &lt;enumeration value="tangential plank not including pith with breadth larger than a quarter section"/>
+ *     &lt;enumeration value="plank not including pith with breadth smaller than a quarter section"/>
+ *     &lt;enumeration value="small part of section"/>
+ *     &lt;enumeration value="part of undetermined section"/>
+ *     &lt;enumeration value="unknown"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -42,44 +42,44 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum NormalTridasShape {
 
-    @XmlEnumValue("Whole section")
-    WHOLE___SECTION("Whole section"),
-    @XmlEnumValue("Half section")
-    HALF___SECTION("Half section"),
-    @XmlEnumValue("Third section")
-    THIRD___SECTION("Third section"),
-    @XmlEnumValue("Quarter section")
-    QUARTER___SECTION("Quarter section"),
-    @XmlEnumValue("Wedge where radius is smaller than circumference")
-    WEDGE___WHERE___RADIUS___IS___SMALLER___THAN___CIRCUMFERENCE("Wedge where radius is smaller than circumference"),
-    @XmlEnumValue("Wedge where radius equals the circumference")
-    WEDGE___WHERE___RADIUS___EQUALS___THE___CIRCUMFERENCE("Wedge where radius equals the circumference"),
-    @XmlEnumValue("Wedge where radius is bigger than the circumference")
-    WEDGE___WHERE___RADIUS___IS___BIGGER___THAN___THE___CIRCUMFERENCE("Wedge where radius is bigger than the circumference"),
-    @XmlEnumValue("Beam straightened on one side")
-    BEAM___STRAIGHTENED___ON___ONE___SIDE("Beam straightened on one side"),
-    @XmlEnumValue("Squared beam from whole section")
-    SQUARED___BEAM___FROM___WHOLE___SECTION("Squared beam from whole section"),
-    @XmlEnumValue("Squared beam from half section")
-    SQUARED___BEAM___FROM___HALF___SECTION("Squared beam from half section"),
-    @XmlEnumValue("Squared beam from quarter section")
-    SQUARED___BEAM___FROM___QUARTER___SECTION("Squared beam from quarter section"),
-    @XmlEnumValue("Plank cut on one side")
-    PLANK___CUT___ON___ONE___SIDE("Plank cut on one side"),
-    @XmlEnumValue("Radial plank through pith")
-    RADIAL___PLANK___THROUGH___PITH("Radial plank through pith"),
-    @XmlEnumValue("Radial plank up to pith")
-    RADIAL___PLANK___UP___TO___PITH("Radial plank up to pith"),
-    @XmlEnumValue("Tangential plank not including pith with breadth larger than a quarter section")
-    TANGENTIAL___PLANK___NOT___INCLUDING___PITH___WITH___BREADTH___LARGER___THAN___A___QUARTER___SECTION("Tangential plank not including pith with breadth larger than a quarter section"),
-    @XmlEnumValue("Plank not including pith with breadth smaller than a quarter section")
-    PLANK___NOT___INCLUDING___PITH___WITH___BREADTH___SMALLER___THAN___A___QUARTER___SECTION("Plank not including pith with breadth smaller than a quarter section"),
-    @XmlEnumValue("Small part of section")
-    SMALL___PART___OF___SECTION("Small part of section"),
-    @XmlEnumValue("Part of undetermined section")
-    PART___OF___UNDETERMINED___SECTION("Part of undetermined section"),
-    @XmlEnumValue("Unknown")
-    UNKNOWN("Unknown");
+    @XmlEnumValue("whole section")
+    WHOLE___SECTION("whole section"),
+    @XmlEnumValue("half section")
+    HALF___SECTION("half section"),
+    @XmlEnumValue("third section")
+    THIRD___SECTION("third section"),
+    @XmlEnumValue("quarter section")
+    QUARTER___SECTION("quarter section"),
+    @XmlEnumValue("wedge where radius is smaller than circumference")
+    WEDGE___WHERE___RADIUS___IS___SMALLER___THAN___CIRCUMFERENCE("wedge where radius is smaller than circumference"),
+    @XmlEnumValue("wedge where radius equals the circumference")
+    WEDGE___WHERE___RADIUS___EQUALS___THE___CIRCUMFERENCE("wedge where radius equals the circumference"),
+    @XmlEnumValue("wedge where radius is bigger than the circumference")
+    WEDGE___WHERE___RADIUS___IS___BIGGER___THAN___THE___CIRCUMFERENCE("wedge where radius is bigger than the circumference"),
+    @XmlEnumValue("beam straightened on one side")
+    BEAM___STRAIGHTENED___ON___ONE___SIDE("beam straightened on one side"),
+    @XmlEnumValue("squared beam from whole section")
+    SQUARED___BEAM___FROM___WHOLE___SECTION("squared beam from whole section"),
+    @XmlEnumValue("squared beam from half section")
+    SQUARED___BEAM___FROM___HALF___SECTION("squared beam from half section"),
+    @XmlEnumValue("squared beam from quarter section")
+    SQUARED___BEAM___FROM___QUARTER___SECTION("squared beam from quarter section"),
+    @XmlEnumValue("plank cut on one side")
+    PLANK___CUT___ON___ONE___SIDE("plank cut on one side"),
+    @XmlEnumValue("radial plank through pith")
+    RADIAL___PLANK___THROUGH___PITH("radial plank through pith"),
+    @XmlEnumValue("radial plank up to pith")
+    RADIAL___PLANK___UP___TO___PITH("radial plank up to pith"),
+    @XmlEnumValue("tangential plank not including pith with breadth larger than a quarter section")
+    TANGENTIAL___PLANK___NOT___INCLUDING___PITH___WITH___BREADTH___LARGER___THAN___A___QUARTER___SECTION("tangential plank not including pith with breadth larger than a quarter section"),
+    @XmlEnumValue("plank not including pith with breadth smaller than a quarter section")
+    PLANK___NOT___INCLUDING___PITH___WITH___BREADTH___SMALLER___THAN___A___QUARTER___SECTION("plank not including pith with breadth smaller than a quarter section"),
+    @XmlEnumValue("small part of section")
+    SMALL___PART___OF___SECTION("small part of section"),
+    @XmlEnumValue("part of undetermined section")
+    PART___OF___UNDETERMINED___SECTION("part of undetermined section"),
+    @XmlEnumValue("unknown")
+    UNKNOWN("unknown");
     private final String value;
 
     NormalTridasShape(String v) {

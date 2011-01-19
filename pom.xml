@@ -128,13 +128,12 @@
 					</args>
 
 					<includeSchemas>
-						<includeSchema>**/*.xsd</includeSchema>
-
-						<includeSchema>**/*.dtd</includeSchema>
+						<includeSchema>**/schemas/*.xsd</includeSchema>
+						<includeSchema>**/schemas/*.dtd</includeSchema>
 					</includeSchemas>
 					<excludeSchemas>
-						<excludeSchema>gmlsf.xsd</excludeSchema>
-						<excludeSchema>xlink.xsd</excludeSchema>
+						<excludeSchema>schemas/gmlsf.xsd</excludeSchema>
+						<excludeSchema>schemas/xlink.xsd</excludeSchema>
 					</excludeSchemas>
 					<includeBindings>
 
@@ -246,18 +245,12 @@
 		          </descriptorRefs>
 		        </configuration>
 		        </plugin>
-			
-			
-			
 		</plugins>
-		
-		
-		
 		  <resources>
 		   <resource>
 		    <directory>${basedir}/target/dependency</directory>
 		   </resource>
-		   <resource>
+		    <resource>
 		     <directory>src/main/resources</directory>
 		   </resource>
 		  </resources>
