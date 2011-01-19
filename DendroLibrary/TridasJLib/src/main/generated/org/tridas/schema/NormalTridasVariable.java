@@ -14,14 +14,16 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;simpleType name="normalTridasVariable">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Ring width"/>
- *     &lt;enumeration value="Earlywood width"/>
- *     &lt;enumeration value="Latewood width"/>
- *     &lt;enumeration value="Ring density"/>
- *     &lt;enumeration value="Earlywood density"/>
- *     &lt;enumeration value="Latewood density"/>
- *     &lt;enumeration value="Maximum density"/>
- *     &lt;enumeration value="Latewood percent"/>
+ *     &lt;enumeration value="ring width"/>
+ *     &lt;enumeration value="earlywood width"/>
+ *     &lt;enumeration value="latewood width"/>
+ *     &lt;enumeration value="ring density"/>
+ *     &lt;enumeration value="earlywood density"/>
+ *     &lt;enumeration value="latewood density"/>
+ *     &lt;enumeration value="maximum density"/>
+ *     &lt;enumeration value="latewood percent"/>
+ *     &lt;enumeration value="vessel size"/>
+ *     &lt;enumeration value="other"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -31,22 +33,26 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum NormalTridasVariable {
 
-    @XmlEnumValue("Ring width")
-    RING_WIDTH("Ring width"),
-    @XmlEnumValue("Earlywood width")
-    EARLYWOOD_WIDTH("Earlywood width"),
-    @XmlEnumValue("Latewood width")
-    LATEWOOD_WIDTH("Latewood width"),
-    @XmlEnumValue("Ring density")
-    RING_DENSITY("Ring density"),
-    @XmlEnumValue("Earlywood density")
-    EARLYWOOD_DENSITY("Earlywood density"),
-    @XmlEnumValue("Latewood density")
-    LATEWOOD_DENSITY("Latewood density"),
-    @XmlEnumValue("Maximum density")
-    MAXIMUM_DENSITY("Maximum density"),
-    @XmlEnumValue("Latewood percent")
-    LATEWOOD_PERCENT("Latewood percent");
+    @XmlEnumValue("ring width")
+    RING_WIDTH("ring width"),
+    @XmlEnumValue("earlywood width")
+    EARLYWOOD_WIDTH("earlywood width"),
+    @XmlEnumValue("latewood width")
+    LATEWOOD_WIDTH("latewood width"),
+    @XmlEnumValue("ring density")
+    RING_DENSITY("ring density"),
+    @XmlEnumValue("earlywood density")
+    EARLYWOOD_DENSITY("earlywood density"),
+    @XmlEnumValue("latewood density")
+    LATEWOOD_DENSITY("latewood density"),
+    @XmlEnumValue("maximum density")
+    MAXIMUM_DENSITY("maximum density"),
+    @XmlEnumValue("latewood percent")
+    LATEWOOD_PERCENT("latewood percent"),
+    @XmlEnumValue("vessel size")
+    VESSEL___SIZE("vessel size"),
+    @XmlEnumValue("other")
+    OTHER("other");
     private final String value;
 
     NormalTridasVariable(String v) {

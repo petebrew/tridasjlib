@@ -14,10 +14,11 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;simpleType name="normalTridasMeasuringMethod">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Measuring platform"/>
- *     &lt;enumeration value="Hand lens and graticule"/>
- *     &lt;enumeration value="Onscreen measuring"/>
- *     &lt;enumeration value="Visual estimate"/>
+ *     &lt;enumeration value="measuring platform"/>
+ *     &lt;enumeration value="hand lens and graticule"/>
+ *     &lt;enumeration value="onscreen measuring"/>
+ *     &lt;enumeration value="visual estimate"/>
+ *     &lt;enumeration value="other"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -27,14 +28,16 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum NormalTridasMeasuringMethod {
 
-    @XmlEnumValue("Measuring platform")
-    MEASURING_PLATFORM("Measuring platform"),
-    @XmlEnumValue("Hand lens and graticule")
-    HAND_LENS_AND_GRATICULE("Hand lens and graticule"),
-    @XmlEnumValue("Onscreen measuring")
-    ONSCREEN_MEASURING("Onscreen measuring"),
-    @XmlEnumValue("Visual estimate")
-    VISUAL_ESTIMATE("Visual estimate");
+    @XmlEnumValue("measuring platform")
+    MEASURING_PLATFORM("measuring platform"),
+    @XmlEnumValue("hand lens and graticule")
+    HAND_LENS_AND_GRATICULE("hand lens and graticule"),
+    @XmlEnumValue("onscreen measuring")
+    ONSCREEN_MEASURING("onscreen measuring"),
+    @XmlEnumValue("visual estimate")
+    VISUAL_ESTIMATE("visual estimate"),
+    @XmlEnumValue("other")
+    OTHER("other");
     private final String value;
 
     NormalTridasMeasuringMethod(String v) {

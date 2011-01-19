@@ -14,11 +14,13 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;simpleType name="normalTridasLocationType">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Growth location"/>
- *     &lt;enumeration value="Location of use (static)"/>
- *     &lt;enumeration value="Location of use (mobile)"/>
- *     &lt;enumeration value="Current location"/>
- *     &lt;enumeration value="Manufacture location"/>
+ *     &lt;enumeration value="growth location"/>
+ *     &lt;enumeration value="location of use (static)"/>
+ *     &lt;enumeration value="location of use (mobile)"/>
+ *     &lt;enumeration value="current location"/>
+ *     &lt;enumeration value="manufacture location"/>
+ *     &lt;enumeration value="find location"/>
+ *     &lt;enumeration value="other"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -28,16 +30,20 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum NormalTridasLocationType {
 
-    @XmlEnumValue("Growth location")
-    GROWTH_LOCATION("Growth location"),
-    @XmlEnumValue("Location of use (static)")
-    LOCATION_OF_USE_STATIC("Location of use (static)"),
-    @XmlEnumValue("Location of use (mobile)")
-    LOCATION_OF_USE_MOBILE("Location of use (mobile)"),
-    @XmlEnumValue("Current location")
-    CURRENT_LOCATION("Current location"),
-    @XmlEnumValue("Manufacture location")
-    MANUFACTURE_LOCATION("Manufacture location");
+    @XmlEnumValue("growth location")
+    GROWTH_LOCATION("growth location"),
+    @XmlEnumValue("location of use (static)")
+    LOCATION_OF_USE_STATIC("location of use (static)"),
+    @XmlEnumValue("location of use (mobile)")
+    LOCATION_OF_USE_MOBILE("location of use (mobile)"),
+    @XmlEnumValue("current location")
+    CURRENT_LOCATION("current location"),
+    @XmlEnumValue("manufacture location")
+    MANUFACTURE_LOCATION("manufacture location"),
+    @XmlEnumValue("find location")
+    FIND___LOCATION("find location"),
+    @XmlEnumValue("other")
+    OTHER("other");
     private final String value;
 
     NormalTridasLocationType(String v) {
