@@ -20,7 +20,6 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="current location"/>
  *     &lt;enumeration value="manufacture location"/>
  *     &lt;enumeration value="find location"/>
- *     &lt;enumeration value="other"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -41,9 +40,7 @@ public enum NormalTridasLocationType {
     @XmlEnumValue("manufacture location")
     MANUFACTURE_LOCATION("manufacture location"),
     @XmlEnumValue("find location")
-    FIND___LOCATION("find location"),
-    @XmlEnumValue("other")
-    OTHER("other");
+    FIND___LOCATION("find location");
     private final String value;
 
     NormalTridasLocationType(String v) {

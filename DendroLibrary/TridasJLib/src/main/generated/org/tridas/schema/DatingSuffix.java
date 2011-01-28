@@ -2,6 +2,7 @@
 package org.tridas.schema;
 
 import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -16,6 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="AD"/>
  *     &lt;enumeration value="BC"/>
  *     &lt;enumeration value="BP"/>
+ *     &lt;enumeration value="relative"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -25,16 +27,28 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum DatingSuffix {
 
-    AD,
-    BC,
-    BP;
+    AD("AD"),
+    BC("BC"),
+    BP("BP"),
+    @XmlEnumValue("relative")
+    RELATIVE("relative");
+    private final String value;
+
+    DatingSuffix(String v) {
+        value = v;
+    }
 
     public String value() {
-        return name();
+        return value;
     }
 
     public static DatingSuffix fromValue(String v) {
-        return valueOf(v);
+        for (DatingSuffix c: DatingSuffix.values()) {
+            if (c.value.equals(v)) {
+                return c;
+            }
+        }
+        throw new IllegalArgumentException(v);
     }
 
 }

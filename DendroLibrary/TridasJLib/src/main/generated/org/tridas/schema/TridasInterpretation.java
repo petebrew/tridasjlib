@@ -68,18 +68,18 @@ public class TridasInterpretation
 {
 
     private final static long serialVersionUID = 1001L;
-    @TridasEditProperties(readOnly = true, finalType = true)
+    @TridasEditProperties(finalType = true, readOnly = true)
     protected TridasDating dating;
-    @TridasEditProperties(readOnly = true, finalType = true)
+    @TridasEditProperties(finalType = true, readOnly = true)
     protected Year firstYear;
     protected Year lastYear;
     protected TridasDatingReference datingReference;
     @XmlElement(name = "statFoundation")
     @TridasEditProperties(readOnly = true)
     protected List<TridasStatFoundation> statFoundations;
-    @TridasEditProperties(readOnly = true, finalType = true)
+    @TridasEditProperties(finalType = true, readOnly = true)
     protected Year pithYear;
-    @TridasEditProperties(readOnly = true, finalType = true)
+    @TridasEditProperties(finalType = true, readOnly = true)
     protected Year deathYear;
     protected String provenance;
 
