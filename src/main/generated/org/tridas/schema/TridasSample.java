@@ -75,7 +75,7 @@ public class TridasSample
 
     private final static long serialVersionUID = 1001L;
     @XmlElement(required = true)
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC, dictionary = "sampleType")
+    @TridasCustomDictionary(dictionary = "sampleType", type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC)
     protected ControlledVoc type;
     protected String description;
     @XmlElement(name = "file")

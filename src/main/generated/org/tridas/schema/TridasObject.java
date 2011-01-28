@@ -97,7 +97,7 @@ public class TridasObject
 
     private final static long serialVersionUID = 1001L;
     @XmlElement(required = true)
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC, dictionary = "objectType")
+    @TridasCustomDictionary(dictionary = "objectType", type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC)
     protected ControlledVoc type;
     protected String description;
     protected SeriesLinksWithPreferred linkSeries;

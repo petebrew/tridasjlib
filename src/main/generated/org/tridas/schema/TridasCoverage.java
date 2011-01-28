@@ -56,10 +56,10 @@ public class TridasCoverage
 
     private final static long serialVersionUID = 1001L;
     @XmlElement(required = true)
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC, dictionary = "coverageTemporal")
+    @TridasCustomDictionary(dictionary = "coverageTemporal", type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC)
     protected String coverageTemporal;
     @XmlElement(required = true)
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC, dictionary = "coverageTemporalFoundation")
+    @TridasCustomDictionary(dictionary = "coverageTemporalFoundation", type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC)
     protected String coverageTemporalFoundation;
 
     /**

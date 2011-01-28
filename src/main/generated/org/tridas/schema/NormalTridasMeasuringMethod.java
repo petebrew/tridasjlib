@@ -18,7 +18,6 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="hand lens and graticule"/>
  *     &lt;enumeration value="onscreen measuring"/>
  *     &lt;enumeration value="visual estimate"/>
- *     &lt;enumeration value="other"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -35,9 +34,7 @@ public enum NormalTridasMeasuringMethod {
     @XmlEnumValue("onscreen measuring")
     ONSCREEN_MEASURING("onscreen measuring"),
     @XmlEnumValue("visual estimate")
-    VISUAL_ESTIMATE("visual estimate"),
-    @XmlEnumValue("other")
-    OTHER("other");
+    VISUAL_ESTIMATE("visual estimate");
     private final String value;
 
     NormalTridasMeasuringMethod(String v) {

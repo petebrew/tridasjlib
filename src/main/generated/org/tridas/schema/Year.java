@@ -2,13 +2,13 @@
 package org.tridas.schema;
 
 import java.io.Serializable;
-import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
@@ -22,10 +22,12 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBCopyBuilder;
 import org.jvnet.jaxb2_commons.lang.builder.JAXBEqualsBuilder;
 import org.jvnet.jaxb2_commons.lang.builder.JAXBHashCodeBuilder;
 import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
+import org.tridas.adapters.IntegerAdapter;
 
 
 /**
- * Data type for storing year.  Includes a separate suffix attribute and optional certainty value
+ * Data type for storing year.  Includes a separate suffix attribute and optional certainty value.
+ * 			The actual data value should be a positive integer if suffix BC, AD or BP is used
  * 
  * <p>Java class for year complex type.
  * 
@@ -34,7 +36,7 @@ import org.jvnet.jaxb2_commons.lang.builder.JAXBToStringBuilder;
  * <pre>
  * &lt;complexType name="year">
  *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>positiveInteger">
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>int">
  *       &lt;attribute name="certainty" type="{http://www.tridas.org/1.2.2}certainty" />
  *       &lt;attribute name="suffix" use="required" type="{http://www.tridas.org/1.2.2}datingSuffix" />
  *     &lt;/extension>
@@ -54,8 +56,9 @@ public class Year
 
     private final static long serialVersionUID = 1001L;
     @XmlValue
-    @XmlSchemaType(name = "positiveInteger")
-    protected BigInteger value;
+    @XmlJavaTypeAdapter(IntegerAdapter.class)
+    @XmlSchemaType(name = "int")
+    protected Integer value;
     @XmlAttribute(name = "certainty")
     protected Certainty certainty;
     @XmlAttribute(name = "suffix", required = true)
@@ -66,10 +69,10 @@ public class Year
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getValue() {
+    public Integer getValue() {
         return value;
     }
 
@@ -78,10 +81,10 @@ public class Year
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setValue(BigInteger value) {
+    public void setValue(Integer value) {
         this.value = value;
     }
 
@@ -147,7 +150,7 @@ public class Year
 
     public void toString(ToStringBuilder toStringBuilder) {
         {
-            BigInteger theValue;
+            Integer theValue;
             theValue = this.getValue();
             toStringBuilder.append("value", theValue);
         }
@@ -210,9 +213,9 @@ public class Year
     public Object copyTo(Object target, CopyBuilder copyBuilder) {
         final Year copy = ((target == null)?((Year) createCopy()):((Year) target));
         if (this.isSetValue()) {
-            BigInteger sourceValue;
+            Integer sourceValue;
             sourceValue = this.getValue();
-            BigInteger copyValue = ((BigInteger) copyBuilder.copy(sourceValue));
+            Integer copyValue = ((Integer) copyBuilder.copy(sourceValue));
             copy.setValue(copyValue);
         } else {
             copy.value = null;

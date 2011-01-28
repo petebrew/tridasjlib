@@ -33,6 +33,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="small part of section"/>
  *     &lt;enumeration value="part of undetermined section"/>
  *     &lt;enumeration value="unknown"/>
+ *     &lt;enumeration value="other"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -79,7 +80,9 @@ public enum NormalTridasShape {
     @XmlEnumValue("part of undetermined section")
     PART___OF___UNDETERMINED___SECTION("part of undetermined section"),
     @XmlEnumValue("unknown")
-    UNKNOWN("unknown");
+    UNKNOWN("unknown"),
+    @XmlEnumValue("other")
+    OTHER("other");
     private final String value;
 
     NormalTridasShape(String v) {

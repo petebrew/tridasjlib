@@ -23,7 +23,6 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="maximum density"/>
  *     &lt;enumeration value="latewood percent"/>
  *     &lt;enumeration value="vessel size"/>
- *     &lt;enumeration value="other"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -50,9 +49,7 @@ public enum NormalTridasVariable {
     @XmlEnumValue("latewood percent")
     LATEWOOD_PERCENT("latewood percent"),
     @XmlEnumValue("vessel size")
-    VESSEL___SIZE("vessel size"),
-    @XmlEnumValue("other")
-    OTHER("other");
+    VESSEL___SIZE("vessel size");
     private final String value;
 
     NormalTridasVariable(String v) {

@@ -92,7 +92,7 @@ public class TridasElement
 {
 
     private final static long serialVersionUID = 1001L;
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC, dictionary = "elementType")
+    @TridasCustomDictionary(dictionary = "elementType", type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC)
     protected ControlledVoc type;
     protected String description;
     @TridasEditProperties(machineOnly = true)
@@ -100,9 +100,9 @@ public class TridasElement
     @XmlElement(name = "file")
     protected List<TridasFile> files;
     @XmlElement(required = true)
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC, dictionary = "taxon", sortType = TridasCustomDictionarySortType.NORMAL_OR_VALUE)
+    @TridasCustomDictionary(dictionary = "taxon", sortType = TridasCustomDictionarySortType.NORMAL_OR_VALUE, type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC)
     protected ControlledVoc taxon;
-    @TridasCustomDictionary(type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC, dictionary = "elementShape")
+    @TridasCustomDictionary(dictionary = "elementShape", type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC)
     protected TridasShape shape;
     protected TridasDimensions dimensions;
     protected String authenticity;
