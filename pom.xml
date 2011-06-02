@@ -4,11 +4,11 @@
 	<parent>
 		<artifactId>DendroLibrary</artifactId>
 		<groupId>org.tridas</groupId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.1</version>
 	</parent>
 	<groupId>org.tridas</groupId>
 	<artifactId>TridasJLib</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<name>TridasJavaLibrary</name>
 	<description>Java Classes from the Tridas XML Schema</description>
 	<url>http://www.tridas.org</url>
