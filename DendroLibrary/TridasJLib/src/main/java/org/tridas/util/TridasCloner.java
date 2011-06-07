@@ -2,7 +2,7 @@ package org.tridas.util;
 
 import java.util.List;
 
-import org.jvnet.jaxb2_commons.lang.Copyable;
+import org.jvnet.jaxb2_commons.lang.CopyTo;
 import org.tridas.interfaces.ITridasSeries;
 import org.tridas.schema.TridasValues;
 
@@ -14,8 +14,9 @@ import org.tridas.schema.TridasValues;
 
 public class TridasCloner {
 	@SuppressWarnings("unchecked")
-	public static <T extends Copyable> T clone(T o) {
-		Object copy = ((TridasValues) o).createCopy();
+	public static <T extends CopyTo> T clone(T o) {
+		Object copy = ((TridasValues) o).clone();
+		
 		o.copyTo(copy);
 		
 		return (T) copy;
@@ -37,8 +38,8 @@ public class TridasCloner {
 		series.unsetValues();
 	
 		// copy the series
-		ITridasSeries copy = (ITridasSeries)(((TridasValues) series).createCopy());
-		((Copyable)series).copyTo(copy);
+		ITridasSeries copy = (ITridasSeries)(((TridasValues) series).clone());
+		series.copyTo(copy);
 		
 		// re-set the values (and reference them, too)
 		series.setValues(values);

@@ -1,10 +1,10 @@
 package org.tridas.interfaces;
 
-import org.jvnet.jaxb2_commons.lang.Copyable;
+import org.jvnet.jaxb2_commons.lang.CopyTo;
 import org.tridas.schema.DateTime;
 import org.tridas.schema.TridasIdentifier;
 
-public interface ITridas extends Copyable, TridasIdentifiable {
+public interface ITridas extends CopyTo, TridasIdentifiable {
    /**
      * Gets the value of the title property.
      * 

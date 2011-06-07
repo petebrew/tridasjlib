@@ -177,8 +177,8 @@ public class TridasObjectEx extends TridasObject {
 		}
 	}
 
-	@Override
+/*	@Override
     public Object createCopy() {
         return new TridasObjectEx();
-    }
+    }*/
 }
