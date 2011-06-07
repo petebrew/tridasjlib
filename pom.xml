@@ -1,14 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<artifactId>DendroLibrary</artifactId>
-		<groupId>org.tridas</groupId>
-		<version>0.1</version>
-	</parent>
 	<groupId>org.tridas</groupId>
 	<artifactId>TridasJLib</artifactId>
-	<version>0.1</version>
+	<version>0.2</version>
 	<name>TridasJavaLibrary</name>
 	<description>Java Classes from the Tridas XML Schema</description>
 	<url>http://www.tridas.org</url>
@@ -18,20 +13,20 @@
 		<dependency>
 			<groupId>org.jvnet.jaxb2_commons</groupId>
 			<artifactId>jaxb2-basics-runtime</artifactId>
-			<version>0.5.1</version>
+			<version>0.6.1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.jvnet.jaxb2_commons</groupId>
 			<artifactId>jaxb2-basics-testing</artifactId>
-			<version>0.5.1</version>
+			<version>0.6.1</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.jvnet.jaxb2_commons</groupId>
 			<artifactId>jaxb2-basics-annotate</artifactId>
-			<version>0.5.1</version>
+			<version>0.6.1</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
@@ -152,7 +147,7 @@
 						<plugin>
 							<groupId>org.jvnet.jaxb2_commons</groupId>
 							<artifactId>jaxb2-basics</artifactId>
-							<version>0.5.2</version>
+							<version>0.6.1</version>
 						</plugin>
 					</plugins>
 
@@ -162,7 +157,7 @@
 				    <dependency>
 						<groupId>org.jvnet.jaxb2_commons</groupId>
 						<artifactId>jaxb2-basics-runtime</artifactId>
-						<version>0.5.2</version>
+						<version>0.6.1</version>
 					</dependency>
 
 					<dependency>
@@ -174,7 +169,7 @@
 					<dependency>
 						<groupId>org.jvnet.jaxb2_commons</groupId>
 						<artifactId>jaxb2-basics-annotate</artifactId>
-						<version>0.5.1</version>
+						<version>0.6.1</version>
 					</dependency>
 
 					<dependency>
