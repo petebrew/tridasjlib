@@ -1,5 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	
+	<!-- Package Metadata -->
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.tridas</groupId>
 	<artifactId>org.tridas.jlib</artifactId>
@@ -7,22 +9,54 @@
 	<name>TridasJavaLibrary</name>
 	<description>Java Classes from the Tridas XML Schema</description>
 	<url>http://www.tridas.org</url>
-
+	<developers>
+		<developer>
+			<name>Peter Brewer</name>
+			<email>p.brewer@cornell.edu</email>
+			<organization>The Malcolm and Carolyn Wiener Laboratory for Aegean and Near Eastern Dendrochronology</organization>
+			<organizationUrl>http://dendro.cornell.edu</organizationUrl>
+		</developer>
+		<developer>
+			<name>Daniel Murphy</name>
+			<email>daniel@dmurph.com</email>
+			<organization>The Malcolm and Carolyn Wiener Laboratory for Aegean and Near Eastern Dendrochronology</organization>
+			<organizationUrl>http://dendro.cornell.edu</organizationUrl>
+		</developer>
+	</developers>
+	<organization>
+		<name>TRiDaS</name>
+		<url>http://www.tridas.org</url>
+	</organization>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+	 <!--  Repository to deploy to.  When deploying make sure your .m2/settings.xml
+	 file contains the correct username and password for the repository server -->
+	<distributionManagement>
+	  <repository>
+	    <id>maven.tridas.org</id>
+	    <url>http://localhost:8080/archiva/repository/maven.tridas.org/</url>
+	  </repository>
+	  <snapshotRepository>
+	    <id>maven.tridas.org</id>
+	    <url>http://localhost:8080/archiva/repository/maven.tridas.org/</url>
+	  </snapshotRepository>
+	</distributionManagement>
+	  	  
+	<!--  Packages TridasJLib relies upon -->
 	<dependencies>
-
 		<dependency>
 			<groupId>org.jvnet.jaxb2_commons</groupId>
 			<artifactId>jaxb2-basics-runtime</artifactId>
 			<version>0.6.1</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.jvnet.jaxb2_commons</groupId>
 			<artifactId>jaxb2-basics-testing</artifactId>
 			<version>0.6.1</version>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>org.jvnet.jaxb2_commons</groupId>
 			<artifactId>jaxb2-basics-annotate</artifactId>
@@ -32,23 +66,8 @@
 		</dependency>
 	</dependencies>
 
-	<organization>
-		<name>TRiDaS</name>
-		<url>http://www.tridas.org</url>
-	</organization>
-	
-	<!-- === BUILD === -->
 	<build>
-		<!--<resources>
-			<resource>
-				 <filtering>false</filtering> 
-				<filtering>true</filtering>
-				<directory>src/main/resources</directory>
-			</resource>
-		</resources>-->
-		
 		<plugins>
-
 			<plugin>
 			  <groupId>org.apache.maven.plugins</groupId>
 			  <artifactId>maven-javadoc-plugin</artifactId>
@@ -61,7 +80,6 @@
 			    </execution>
 			  </executions>
 			</plugin>
-			
 			<plugin>
 			  <groupId>org.apache.maven.plugins</groupId>
 			  <artifactId>maven-source-plugin</artifactId>
@@ -74,7 +92,6 @@
 			    </execution>
 			  </executions>
 			</plugin>
-	
 			<plugin>
 				<inherited>true</inherited>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -85,17 +102,8 @@
 					<optimise>true</optimise>
 					<debug>true</debug>
 				</configuration>
-			</plugin>
-
-			<!--<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-eclipse-plugin</artifactId>
-				<configuration>
-					<downloadSources>true</downloadSources>
-				</configuration>
-			</plugin>
-
-			--><!-- JAXB -->
+			</plugin>	
+			<!-- JAXB -->
 			<plugin>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin</artifactId>
@@ -108,7 +116,6 @@
 					</execution>
 				</executions>
 				<configuration>
-
 					<args>
 						<arg>-extension</arg>
 						<arg>-no-header</arg>
@@ -121,7 +128,6 @@
 						<arg>-Xcollection-setter-injector</arg>
 						<arg>-Xannotate</arg>
 					</args>
-
 					<includeSchemas>
 						<includeSchema>**/schemas/*.xsd</includeSchema>
 						<includeSchema>**/schemas/*.dtd</includeSchema>
@@ -131,18 +137,14 @@
 						<excludeSchema>schemas/xlink.xsd</excludeSchema>
 					</excludeSchemas>
 					<includeBindings>
-
 						<includeBinding>*.xjb</includeBinding>
 					</includeBindings>
 					<generateDirectory>src/main/generated</generateDirectory>
-
-
 					<extension>true</extension>
 					<!--
 					<strict>true</strict>
 					-->
 					<verbose>true</verbose>
-
 					<plugins>
 						<plugin>
 							<groupId>org.jvnet.jaxb2_commons</groupId>
@@ -150,70 +152,42 @@
 							<version>0.6.1</version>
 						</plugin>
 					</plugins>
-
 				</configuration>
 				<dependencies>
-
 				    <dependency>
 						<groupId>org.jvnet.jaxb2_commons</groupId>
 						<artifactId>jaxb2-basics-runtime</artifactId>
 						<version>0.6.1</version>
 					</dependency>
-
 					<dependency>
 						<groupId>org.jvnet.jaxb2_commons</groupId>
 						<artifactId>xjc-if-ins</artifactId>
 						<version>0.5.2</version>
 					</dependency>
-
 					<dependency>
 						<groupId>org.jvnet.jaxb2_commons</groupId>
 						<artifactId>jaxb2-basics-annotate</artifactId>
 						<version>0.6.1</version>
 					</dependency>
-
 					<dependency>
 						<groupId>org.tridas.schema</groupId>
 						<artifactId>tridasaandi</artifactId>
 						<version>1.0</version>
 					</dependency>
-
 					<dependency>
 						<groupId>org.tridas.schema</groupId>
 						<artifactId>tridas-annotations</artifactId>
 						<version>1.0</version>
 					</dependency>
-
 					<dependency>
 						<groupId>com.sun.tools.xjc</groupId>
 						<artifactId>collection-setter-injector</artifactId>
 						<version>0.1</version>
 					</dependency>
-
-
-					<!--
-						<dependency> <groupId>org.no0ne</groupId>
-						<artifactId>coll-prop</artifactId> <version>0.1-SNAPSHOT</version>
-						</dependency>
-					-->
-
-					<!--
-						<dependency>
-						<groupId>org.jvnet.jaxb2_commons.plugin.annotate</groupId>
-						<artifactId>jaxb2-annotate</artifactId>
-						<version>0.5.1-SNAPSHOT</version> </dependency>
-					-->
-
-					<!--
-						<dependency> <groupId>org.jvnet.annox</groupId>
-						<artifactId>annox-plugin</artifactId>
-						<version>0.4.3-SNAPSHOT</version> </dependency>
-					-->
 				</dependencies>
 			</plugin>
 			
-			
-					     <!--  Uncomment this plugin to include *all* dependencies into this jar -->
+			<!--  Uncomment this plugin to include *all* dependencies into this jar -->
 		     <plugin>
 			    <groupId>org.apache.maven.plugins</groupId>
 			    <artifactId>maven-dependency-plugin</artifactId>
@@ -241,20 +215,19 @@
 		        </configuration>
 		        </plugin>
 		</plugins>
-		  <resources>
-		   <resource>
-		    <directory>${basedir}/target/dependency</directory>
-		   </resource>
-		    <resource>
-		     <directory>src/main/resources</directory>
-		   </resource>
-		  </resources>
-		
+	
+	  <resources>
+	  	<resource>
+	    	<directory>${basedir}/target/dependency</directory>
+	   	</resource>
+	  	<resource>
+	  		<directory>src/main/resources</directory>
+	  	</resource>
+	  </resources>
 	</build>
-	
+		 
+
 	<repositories>
-	
-	      <!-- Codehaus -->
         <repository>
             <id>codehaus</id>
             <name>Codehaus repository</name>
@@ -268,7 +241,6 @@
                 <checksumPolicy>fail</checksumPolicy>
             </snapshots>
         </repository>
-
        <repository>
             <id>java.net</id>
             <url>http://download.java.net/maven/1</url>
@@ -279,7 +251,6 @@
                 <checksumPolicy>fail</checksumPolicy>
             </snapshots>
         </repository>
-
         <repository>
             <id>maven2-repository.dev.java.net</id>
             <name>Java.net Repository for Maven</name>
@@ -291,29 +262,30 @@
                 <checksumPolicy>fail</checksumPolicy>
             </snapshots>
         </repository>
-
+        <repository>
+	      <id>maven.tridas.org</id>
+	      <name>TRiDaS Maven Repository</name>
+	      <url>http://localhost:8080/archiva/repository/maven.tridas.org/</url>
+	      <releases>
+	        <enabled>true</enabled>
+	      </releases>
+	      <snapshots>
+	        <enabled>true</enabled>
+	      </snapshots>
+	    </repository>
     </repositories>
 
-	
-	
 	<pluginRepositories>
-
-        <!-- JAXB related -->
         <pluginRepository>
             <id>maven2-repository.dev.java.net</id>
             <name>Java.net Maven 2 Repository</name>
             <url>http://download.java.net/maven/2</url>
         </pluginRepository>
-
         <pluginRepository>
             <id>maven-repository.dev.java.net</id>
             <name>Java.net Maven 1 Repository (legacy)</name>
             <url>http://download.java.net/maven/1</url>
         </pluginRepository>
-
     </pluginRepositories>
-	
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+
 </project>
