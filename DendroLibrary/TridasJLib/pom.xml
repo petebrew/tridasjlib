@@ -4,11 +4,19 @@
 	<!-- Package Metadata -->
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.tridas</groupId>
-	<artifactId>org.tridas.jlib</artifactId>
-	<version>0.2</version>
+	<artifactId>tridasjlib</artifactId>
+	<version>0.3-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>TridasJavaLibrary</name>
-	<description>Java Classes from the Tridas XML Schema</description>
+	<description>JAXB generated Java classes from the Tridas XML schema</description>
 	<url>http://www.tridas.org</url>
+	<licenses>
+		<license>
+		    <name>The Apache Software License, Version 2.0</name>
+      		<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      		<distribution>repo</distribution>
+		</license>
+	</licenses>
 	<developers>
 		<developer>
 			<name>Peter Brewer</name>
@@ -23,6 +31,15 @@
 			<organizationUrl>http://dendro.cornell.edu</organizationUrl>
 		</developer>
 	</developers>
+	<contributors>
+		<contributor>
+			<name>Esther Jansma</name>
+		</contributor>
+	</contributors>
+	<scm>
+		<connection>https://tridas.svn.sourceforge.net/svnroot/tridas/DendroLibrary/TridasJLib/</connection>
+		<url>https://tridas.svn.sourceforge.net/svnroot/tridas/DendroLibrary/TridasJLib/</url>
+	</scm>
 	<organization>
 		<name>TRiDaS</name>
 		<url>http://www.tridas.org</url>
@@ -34,14 +51,14 @@
 	 <!--  Repository to deploy to.  When deploying make sure your .m2/settings.xml
 	 file contains the correct username and password for the repository server -->
 	<distributionManagement>
-	  <repository>
-	    <id>maven.tridas.org</id>
-	    <url>http://localhost:8080/archiva/repository/maven.tridas.org/</url>
-	  </repository>
-	  <snapshotRepository>
-	    <id>maven.tridas.org</id>
-	    <url>http://localhost:8080/archiva/repository/maven.tridas.org/</url>
-	  </snapshotRepository>
+	    <repository>
+	      <id>tridas-releases</id>
+	      <url>http://maven.tridas.org/repository/tridas-releases/</url>
+	    </repository>
+	    <snapshotRepository>
+	      <id>tridas-snapshots</id>
+	      <url>http://maven.tridas.org/repository/tridas-snapshots/</url>
+	    </snapshotRepository>
 	</distributionManagement>
 	  	  
 	<!--  Packages TridasJLib relies upon -->
@@ -71,6 +88,7 @@
 			<plugin>
 			  <groupId>org.apache.maven.plugins</groupId>
 			  <artifactId>maven-javadoc-plugin</artifactId>
+			  <version>2.8</version>
 			  <executions>
 			    <execution>
 			      <id>attach-javadocs</id>
@@ -83,6 +101,7 @@
 			<plugin>
 			  <groupId>org.apache.maven.plugins</groupId>
 			  <artifactId>maven-source-plugin</artifactId>
+			  <version>2.1.2</version>
 			  <executions>
 			    <execution>
 			      <id>attach-sources</id>
@@ -96,6 +115,7 @@
 				<inherited>true</inherited>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
@@ -191,6 +211,7 @@
 		     <plugin>
 			    <groupId>org.apache.maven.plugins</groupId>
 			    <artifactId>maven-dependency-plugin</artifactId>
+			    <version>2.1</version>
 			    <executions>
 			     <execution>
 			      <id>unpack-dependencies</id>
@@ -244,7 +265,7 @@
        <repository>
             <id>java.net</id>
             <url>http://download.java.net/maven/1</url>
-            <layout>legacy</layout>
+            <!-- <layout>legacy</layout>-->
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
@@ -262,17 +283,31 @@
                 <checksumPolicy>fail</checksumPolicy>
             </snapshots>
         </repository>
-        <repository>
-	      <id>maven.tridas.org</id>
-	      <name>TRiDaS Maven Repository</name>
-	      <url>http://localhost:8080/archiva/repository/maven.tridas.org/</url>
+	    <repository>
+	      <id>tridas-releases</id>
+	      <name>TRiDaS Maven Releases Repository</name>
+	      <url>http://maven.tridas.org/repository/tridas-releases/</url>
 	      <releases>
 	        <enabled>true</enabled>
+	      </releases>
+	      <snapshots>
+	        <enabled>false</enabled>
+	      </snapshots>
+	    </repository>
+	    <repository>
+	      <id>tridas-snapshots</id>
+	      <name>TRiDaS Maven Snapshots Repository</name>
+	      <url>http://maven.tridas.org/repository/tridas-snapshots/</url>
+	      <releases>
+	        <enabled>false</enabled>
 	      </releases>
 	      <snapshots>
 	        <enabled>true</enabled>
 	      </snapshots>
 	    </repository>
+		    
+
+
     </repositories>
 
 	<pluginRepositories>
