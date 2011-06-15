@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.tridas</groupId>
-	<artifactId>TridasJLib</artifactId>
+	<artifactId>org.tridas.jlib</artifactId>
 	<version>0.2</version>
 	<name>TridasJavaLibrary</name>
 	<description>Java Classes from the Tridas XML Schema</description>
