@@ -68,8 +68,8 @@ public class SurfaceMember
      * @return
      *     possible object is
      *     {@link JAXBElement }{@code <}{@link PolygonType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link AbstractSurfaceType }{@code >}
      *     {@link JAXBElement }{@code <}{@link SurfaceType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link AbstractSurfaceType }{@code >}
      *     
      */
     public JAXBElement<? extends AbstractSurfaceType> get_Surface() {
@@ -82,8 +82,8 @@ public class SurfaceMember
      * @param value
      *     allowed object is
      *     {@link JAXBElement }{@code <}{@link PolygonType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link AbstractSurfaceType }{@code >}
      *     {@link JAXBElement }{@code <}{@link SurfaceType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link AbstractSurfaceType }{@code >}
      *     
      */
     public void set_Surface(JAXBElement<? extends AbstractSurfaceType> value) {
