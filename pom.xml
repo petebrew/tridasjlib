@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.tridas</groupId>
 	<artifactId>tridasjlib</artifactId>
-	<version>1.22.2</version>
+	<version>1.22.3</version>
 	<packaging>jar</packaging>
 	<name>TridasJavaLibrary</name>
 	<description>JAXB generated Java classes from the Tridas XML schema</description>
@@ -208,7 +208,7 @@
 			</plugin>
 			
 			<!--  Uncomment this plugin to include *all* dependencies into this jar -->
-		     <plugin>
+		     <!-- <plugin>
 			    <groupId>org.apache.maven.plugins</groupId>
 			    <artifactId>maven-dependency-plugin</artifactId>
 			    <executions>
@@ -221,7 +221,7 @@
 			     </execution>
 			    </executions>
 			   </plugin>
-			
+			-->
 		      <plugin>
 		        <!-- NOTE: We don't need a groupId specification because the group is
 		             org.apache.maven.plugins ...which is assumed by default.
