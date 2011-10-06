@@ -80,8 +80,8 @@ public class Patches
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link PolygonPatchType }{@code >}
      * {@link JAXBElement }{@code <}{@link AbstractSurfacePatchType }{@code >}
+     * {@link JAXBElement }{@code <}{@link PolygonPatchType }{@code >}
      * 
      * 
      */
@@ -200,8 +200,8 @@ public class Patches
      * 
      * @param surfacePatches
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link PolygonPatchType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractSurfacePatchType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link PolygonPatchType }{@code >}
      *     
      */
     public void set_SurfacePatches(List<JAXBElement<? extends AbstractSurfacePatchType>> surfacePatches) {
