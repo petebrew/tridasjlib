@@ -149,8 +149,15 @@ public class TridasObjectEx extends TridasObject {
 				if ("corina.objectLabCode".equals(fieldName)) {
 					this.labCodeBlah = f.getValue();
 				}
+				else if ("tellervo.objectLabCode".equals(fieldName)) {
+					this.labCodeBlah = f.getValue();
+				}
 				// series count
 				else if ("corina.countOfChildSeries".equals(fieldName)) {
+					this.mySeriesCount = this.childSeriesCount = 
+						NumberUtils.toInt(f.getValue());
+				}
+				else if ("tellervo.countOfChildSeries".equals(fieldName)) {
 					this.mySeriesCount = this.childSeriesCount = 
 						NumberUtils.toInt(f.getValue());
 				}
