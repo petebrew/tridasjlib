@@ -101,6 +101,7 @@ public class TridasObject
     @TridasCustomDictionary(dictionary = "objectType", type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC)
     protected ControlledVoc type;
     protected String description;
+    @TridasEditProperties(machineOnly = true)
     protected SeriesLinksWithPreferred linkSeries;
     @XmlElement(name = "file")
     protected List<TridasFile> files;
