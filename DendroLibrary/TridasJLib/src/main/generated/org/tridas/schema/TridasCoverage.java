@@ -23,6 +23,7 @@ import org.jvnet.jaxb2_commons.locator.ObjectLocator;
 import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
 import org.tridas.annotations.TridasCustomDictionary;
 import org.tridas.annotations.TridasCustomDictionaryType;
+import org.tridas.annotations.TridasEditProperties;
 
 
 /**
@@ -51,6 +52,7 @@ import org.tridas.annotations.TridasCustomDictionaryType;
     "coverageTemporalFoundation"
 })
 @XmlRootElement(name = "coverage")
+@TridasEditProperties(machineOnly = true)
 public class TridasCoverage
     implements Serializable, Cloneable, CopyTo, Equals, HashCode, ToString
 {

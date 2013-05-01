@@ -25,6 +25,10 @@ This file is for custom annotations applied to tridas entities
 		</annox:annotate>	
 	</bindings>
 	
+
+	
+
+	
 	<bindings node="//xs:element[@name='genericField']/xs:complexType">
   		<annox:annotate target="class">
 			<ta:TridasEditProperties machineOnly="true" />
@@ -73,6 +77,12 @@ This file is for custom annotations applied to tridas entities
 		</annox:annotate>	
 	</bindings>	
 
+	<bindings node="//xs:element[@name='coverage']/xs:complexType">
+  		<annox:annotate target="class">
+			<ta:TridasEditProperties machineOnly="true" />
+		</annox:annotate>	
+	</bindings>
+
 	<!-- LinkSeries is unviewable except for preferredSeries -->
 	<bindings node="//xs:complexType[@name='seriesLinks']/xs:sequence/xs:element[@name='series']">
 		<annox:annotate target="field"><ta:TridasEditProperties machineOnly="true"/></annox:annotate>
@@ -82,6 +92,12 @@ This file is for custom annotations applied to tridas entities
 	<bindings node="//xs:element[@name='element']/xs:complexType/xs:complexContent/xs:extension/xs:sequence/xs:element[@name='linkSeries']">
 		<annox:annotate target="field"><ta:TridasEditProperties machineOnly="true"/></annox:annotate>
 	</bindings>
+	
+	<!-- No object.linkSeries -->
+	<bindings node="//xs:element[@name='object']/xs:complexType/xs:complexContent/xs:extension/xs:sequence/xs:element[@name='linkSeries']">
+		<annox:annotate target="field"><ta:TridasEditProperties machineOnly="true"/></annox:annotate>
+	</bindings>
+	
 
 	<!-- No interpretationUnsolved -->
 	<bindings node="//xs:group[@name='interpretationType']/xs:choice/xs:element[@ref='interpretationUnsolved']">
