@@ -4,7 +4,7 @@ import org.jvnet.jaxb2_commons.lang.CopyTo;
 import org.tridas.schema.DateTime;
 import org.tridas.schema.TridasIdentifier;
 
-public interface ITridas extends CopyTo, TridasIdentifiable {
+public interface ITridas extends CopyTo, TridasIdentifiable, ICoreTridas {
    /**
      * Gets the value of the title property.
      * 
@@ -27,28 +27,7 @@ public interface ITridas extends CopyTo, TridasIdentifiable {
 
     public boolean isSetTitle();
 
-    /**
-     * Gets the value of the identifier property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TridasIdentifier }
-     *     
-     */
-    // set in TridasIdentifiable
-    //public TridasIdentifier getIdentifier();
-
-    /**
-     * Sets the value of the identifier property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TridasIdentifier }
-     *     
-     */
-    public void setIdentifier(TridasIdentifier value);
-
-    public boolean isSetIdentifier();
+ 
     
     /**
      * Gets the value of the createdTimestamp property.
