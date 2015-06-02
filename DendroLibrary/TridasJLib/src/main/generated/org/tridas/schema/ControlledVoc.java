@@ -56,11 +56,11 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
     "value"
 })
 @XmlSeeAlso({
-    TridasMeasuringMethod.class,
     TridasShape.class,
+    TridasMeasuringMethod.class,
+    TridasRemark.class,
     TridasUnit.class,
-    TridasVariable.class,
-    TridasRemark.class
+    TridasVariable.class
 })
 public class ControlledVoc
     implements Serializable, Cloneable, CopyTo, Equals, HashCode, ToString

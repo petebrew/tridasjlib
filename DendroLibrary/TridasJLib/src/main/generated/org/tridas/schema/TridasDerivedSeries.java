@@ -113,7 +113,7 @@ public class TridasDerivedSeries
     protected String objective;
     @TridasEditProperties(readOnly = true)
     protected String standardizingMethod;
-    @TridasCustomDictionary(identifierField = "corina.authorID", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME, dictionary = "securityUser", type = TridasCustomDictionaryType.CORINA_GENERICID)
+    @TridasCustomDictionary(identifierField = "corina.authorID", dictionary = "securityUser", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME, type = TridasCustomDictionaryType.CORINA_GENERICID)
     protected String author;
     protected String version;
     @TridasEditProperties(machineOnly = true)

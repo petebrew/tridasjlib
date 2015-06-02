@@ -100,9 +100,9 @@ public class TridasMeasurementSeries
     protected Date measuringDate;
     @TridasEditProperties(machineOnly = true)
     protected TridasWoodCompleteness woodCompleteness;
-    @TridasCustomDictionary(identifierField = "corina.analystID", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME, dictionary = "securityUser", type = TridasCustomDictionaryType.CORINA_GENERICID)
+    @TridasCustomDictionary(identifierField = "corina.analystID", dictionary = "securityUser", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME, type = TridasCustomDictionaryType.CORINA_GENERICID)
     protected String analyst;
-    @TridasCustomDictionary(identifierField = "corina.dendrochronologistID", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME, dictionary = "securityUser", type = TridasCustomDictionaryType.CORINA_GENERICID)
+    @TridasCustomDictionary(identifierField = "corina.dendrochronologistID", dictionary = "securityUser", sortType = TridasCustomDictionarySortType.LASTNAME_FIRSTNAME, type = TridasCustomDictionaryType.CORINA_GENERICID)
     protected String dendrochronologist;
     @XmlElement(required = true)
     protected TridasMeasuringMethod measuringMethod;
