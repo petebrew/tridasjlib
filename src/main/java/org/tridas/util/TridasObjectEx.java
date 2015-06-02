@@ -84,6 +84,23 @@ public class TridasObjectEx extends TridasObject {
 		return (labCodeBlah != null) ? labCodeBlah : "(n/a)";
 	}
 	
+	@XmlTransient
+	public String getMultiLevelLabCode(){
+	
+
+		String parentCode = getParentLabCode();
+		String labCode = getLabCode();
+		
+		if(parentCode==null)
+		{
+			return labCode;
+		}
+		else
+		{
+			return parentCode+"-"+labCode;
+		}
+	}
+	
 	/**
 	 * Get the parent lab code, or (n/a) if there is no code
 	 * @return The "lab code" of the parent of this object

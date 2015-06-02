@@ -1,36 +1,49 @@
 CONCEPT [Source rows: 5,6,7,8,9,10,11,12,13,14,1675,1676]
-de : Frachtkahn
-de : Kahn
-de : Lastkahn
-en : barge
+//de : Frachtkahn
+//de : Lastkahn
+de : boot
 en : boat
+//fr : canot de parade
+//fr : chaland
+//fr : péniche
 fr : barge
-fr : canot de parade
-fr : chaland
-fr : péniche
+//nl : schuit
+nl : boot
+CONCEPT [New concept]
+de : Kahn
+en : barge
+fr : barge
 nl : aak
-nl : schuit
 CONCEPT [Source rows: 23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,15,16,17,18,19,20,21,22,50,51,52,53,54,55,56,57,58,815,816,817,818]
+// TODO Large grouping of concepts being broken up.  DE, FR and NL terms need to be assigned to new concepts
 de : Anlege
 de : Anlegeplatz
 de : Anlegestelle
 de : Bootssteg
-de : Kai
 de : Landungsbrücke
 de : Landungsplatz
 de : Landungsstelle
 de : Steg
-en : Landing place
-en : Landing stage
-en : Quay
-en : wharf
 fr : débarcadère
 fr : embarcadère
-fr : Ponton
-fr : Quai
 nl : Aanlegplaats
 nl : Aanlegsteiger
+CONCEPT [New concept]
+en : Quay
 nl : Kade
+fr : Quai
+de : Kai
+CONCEPT [New concept]
+en : wharf
+CONCEPT [New concept]
+en : Pier
+CONCEPT [New concept]
+en : Jetty
+en : Landing place
+en : Landing stage
+CONCEPT [New concept]
+en : Pontoon
+fr : Ponton
 CONCEPT [Source rows: 59]
 de : Abtei
 en : Abbey
@@ -42,20 +55,18 @@ en : Abbey church
 fr : Abbatiale
 nl : Abdijkerk
 CONCEPT [Source rows: 61,62]
-de : Hinterfront
-en : Back (side)
-en : Rear (side)
+de : hintere faciade
+en : rear facade
 fr : Façade postérieure
 nl : Achtergevel
 CONCEPT [Source rows: 63,64]
 de : Hinterhaus
-en : Back aisle
-en : Rear part
-fr : Arrière-corps (de la maison)
+en : Rear wing (of house)
+fr : aisle arriere
 nl : Achterhuis
 CONCEPT [Source rows: 65,66]
 de : Hinterstube
-de : Hinterzimmer
+de*: Hinterzimmer
 en : Back room
 fr : Chambre de derrière
 nl : Achterkamer
