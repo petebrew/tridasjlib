@@ -46,8 +46,8 @@ import org.jvnet.jaxb2_commons.locator.ObjectLocator;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AbstractCurveType")
 @XmlSeeAlso({
-    LineStringType.class,
-    CurveType.class
+    CurveType.class,
+    LineStringType.class
 })
 public abstract class AbstractCurveType
     extends AbstractGeometricPrimitiveType

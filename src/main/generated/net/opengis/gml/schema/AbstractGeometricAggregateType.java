@@ -44,9 +44,9 @@ import org.jvnet.jaxb2_commons.locator.ObjectLocator;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AbstractGeometricAggregateType")
 @XmlSeeAlso({
-    MultiCurveType.class,
     MultiPointType.class,
-    MultiSurfaceType.class
+    MultiSurfaceType.class,
+    MultiCurveType.class
 })
 public abstract class AbstractGeometricAggregateType
     extends AbstractGeometryType

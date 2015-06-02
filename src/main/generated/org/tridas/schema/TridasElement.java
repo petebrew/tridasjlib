@@ -101,7 +101,7 @@ public class TridasElement
     @XmlElement(name = "file")
     protected List<TridasFile> files;
     @XmlElement(required = true)
-    @TridasCustomDictionary(sortType = TridasCustomDictionarySortType.NORMAL_OR_VALUE, dictionary = "taxon", type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC)
+    @TridasCustomDictionary(dictionary = "taxon", sortType = TridasCustomDictionarySortType.NORMAL_OR_VALUE, type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC)
     protected ControlledVoc taxon;
     @TridasCustomDictionary(dictionary = "elementShape", type = TridasCustomDictionaryType.CORINA_CONTROLLEDVOC)
     protected TridasShape shape;
