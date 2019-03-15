@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.tridas</groupId>
 	<artifactId>tridasjlib</artifactId>
-	<version>1.22.4</version>
+	<version>1.22.6</version>
 	<packaging>jar</packaging>
 	<name>TridasJavaLibrary</name>
 	<description>JAXB generated Java classes from the Tridas XML schema</description>
@@ -52,12 +52,12 @@
 	 file contains the correct username and password for the repository server -->
 	<distributionManagement>
 	    <repository>
-	      <id>tridas-releases</id>
-	      <url>http://maven.tridas.org/repository/tridas-releases/</url>
+	      <id>ltrr-releases</id>
+	      <url>https://repo.ltrr.arizona.edu/ltrr-releases/</url>
 	    </repository>
 	    <snapshotRepository>
-	      <id>tridas-snapshots</id>
-	      <url>http://maven.tridas.org/repository/tridas-snapshots/</url>
+	      <id>ltrr-snapshots</id>
+	      <url>https://repo.ltrr.arizona.edu/ltrr-snapshots/</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	  	  

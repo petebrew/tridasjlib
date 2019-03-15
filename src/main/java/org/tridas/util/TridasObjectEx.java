@@ -97,7 +97,7 @@ public class TridasObjectEx extends TridasObject {
 		}
 		else
 		{
-			return parentCode+"-"+labCode;
+			return parentCode+">"+labCode;
 		}
 	}
 	
