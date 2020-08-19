@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.tridas</groupId>
 	<artifactId>tridasjlib</artifactId>
-	<version>1.22.6</version>
+	<version>1.22.7-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>TridasJavaLibrary</name>
 	<description>JAXB generated Java classes from the Tridas XML schema</description>
@@ -20,15 +20,12 @@
 	<developers>
 		<developer>
 			<name>Peter Brewer</name>
-			<email>p.brewer@cornell.edu</email>
-			<organization>The Malcolm and Carolyn Wiener Laboratory for Aegean and Near Eastern Dendrochronology</organization>
-			<organizationUrl>http://dendro.cornell.edu</organizationUrl>
+			<email>p.brewer@ltrr.arizona.edu</email>
+			<organization>Laboratory of Tree-Ring Research</organization>
+			<organizationUrl>https://ltrr.arizona.edu</organizationUrl>
 		</developer>
 		<developer>
 			<name>Daniel Murphy</name>
-			<email>daniel@dmurph.com</email>
-			<organization>The Malcolm and Carolyn Wiener Laboratory for Aegean and Near Eastern Dendrochronology</organization>
-			<organizationUrl>http://dendro.cornell.edu</organizationUrl>
 		</developer>
 	</developers>
 	<contributors>
@@ -36,10 +33,6 @@
 			<name>Esther Jansma</name>
 		</contributor>
 	</contributors>
-	<scm>
-		<connection>https://tridas.svn.sourceforge.net/svnroot/tridas/DendroLibrary/TridasJLib/</connection>
-		<url>https://tridas.svn.sourceforge.net/svnroot/tridas/DendroLibrary/TridasJLib/</url>
-	</scm>
 	<organization>
 		<name>TRiDaS</name>
 		<url>http://www.tridas.org</url>
