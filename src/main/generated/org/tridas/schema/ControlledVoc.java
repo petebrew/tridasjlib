@@ -37,16 +37,16 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="controlledVoc">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="normalStd" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" />
- *       &lt;attribute name="normalId" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" />
- *       &lt;attribute name="normal" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" />
- *       &lt;attribute name="lang" type="{http://www.w3.org/2001/XMLSchema}language" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType name="controlledVoc"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;string"&gt;
+ *       &lt;attribute name="normalStd" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" /&gt;
+ *       &lt;attribute name="normalId" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" /&gt;
+ *       &lt;attribute name="normal" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" /&gt;
+ *       &lt;attribute name="lang" type="{http://www.w3.org/2001/XMLSchema}language" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -56,8 +56,8 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
     "value"
 })
 @XmlSeeAlso({
-    TridasShape.class,
     TridasMeasuringMethod.class,
+    TridasShape.class,
     TridasRemark.class,
     TridasUnit.class,
     TridasVariable.class

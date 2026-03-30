@@ -35,12 +35,12 @@ import org.jvnet.jaxb2_commons.locator.ObjectLocator;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AbstractGeometricPrimitiveType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.opengis.net/gml}AbstractGeometryType">
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AbstractGeometricPrimitiveType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://www.opengis.net/gml}AbstractGeometryType"&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -48,8 +48,8 @@ import org.jvnet.jaxb2_commons.locator.ObjectLocator;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AbstractGeometricPrimitiveType")
 @XmlSeeAlso({
-    AbstractSurfaceType.class,
     PointType.class,
+    AbstractSurfaceType.class,
     AbstractCurveType.class
 })
 public abstract class AbstractGeometricPrimitiveType

@@ -10,17 +10,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>Java class for certainty.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="certainty">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="unknown"/>
- *     &lt;enumeration value="exact"/>
- *     &lt;enumeration value="approximately"/>
- *     &lt;enumeration value="after"/>
- *     &lt;enumeration value="before"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="certainty"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="unknown"/&gt;
+ *     &lt;enumeration value="exact"/&gt;
+ *     &lt;enumeration value="approximately"/&gt;
+ *     &lt;enumeration value="after"/&gt;
+ *     &lt;enumeration value="before"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

@@ -10,18 +10,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>Java class for normalTridasLocationType.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="normalTridasLocationType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="growth location"/>
- *     &lt;enumeration value="location of use (static)"/>
- *     &lt;enumeration value="location of use (mobile)"/>
- *     &lt;enumeration value="current location"/>
- *     &lt;enumeration value="manufacture location"/>
- *     &lt;enumeration value="find location"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="normalTridasLocationType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="growth location"/&gt;
+ *     &lt;enumeration value="location of use (static)"/&gt;
+ *     &lt;enumeration value="location of use (mobile)"/&gt;
+ *     &lt;enumeration value="current location"/&gt;
+ *     &lt;enumeration value="manufacture location"/&gt;
+ *     &lt;enumeration value="find location"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

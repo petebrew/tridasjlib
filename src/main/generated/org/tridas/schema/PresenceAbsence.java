@@ -10,15 +10,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>Java class for presenceAbsence.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="presenceAbsence">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="present"/>
- *     &lt;enumeration value="absent"/>
- *     &lt;enumeration value="unknown"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="presenceAbsence"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="present"/&gt;
+ *     &lt;enumeration value="absent"/&gt;
+ *     &lt;enumeration value="unknown"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

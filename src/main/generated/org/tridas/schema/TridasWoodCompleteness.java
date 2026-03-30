@@ -33,22 +33,22 @@ import org.tridas.annotations.TridasEditProperties;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}ringCount" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}averageRingWidth" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}nrOfUnmeasuredInnerRings" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}nrOfUnmeasuredOuterRings" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}pith"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}heartwood"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}sapwood"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}bark"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}ringCount" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}averageRingWidth" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}nrOfUnmeasuredInnerRings" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}nrOfUnmeasuredOuterRings" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}pith"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}heartwood"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}sapwood"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}bark"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

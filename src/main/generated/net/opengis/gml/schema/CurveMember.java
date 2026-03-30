@@ -36,22 +36,22 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CurvePropertyType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.opengis.net/gml}_Curve"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="CurvePropertyType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.opengis.net/gml}_Curve"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CurvePropertyType", propOrder = {
-    "curve"
+    "_Curve"
 })
 @XmlRootElement(name = "curveMember")
 public class CurveMember
@@ -60,20 +60,20 @@ public class CurveMember
 
     private final static long serialVersionUID = 1001L;
     @XmlElementRef(name = "_Curve", namespace = "http://www.opengis.net/gml", type = JAXBElement.class)
-    protected JAXBElement<? extends AbstractCurveType> curve;
+    protected JAXBElement<? extends AbstractCurveType> _Curve;
 
     /**
      * Gets the value of the _Curve property.
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link CurveType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractCurveType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link CurveType }{@code >}
      *     {@link JAXBElement }{@code <}{@link LineStringType }{@code >}
      *     
      */
     public JAXBElement<? extends AbstractCurveType> get_Curve() {
-        return curve;
+        return _Curve;
     }
 
     /**
@@ -81,17 +81,17 @@ public class CurveMember
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link CurveType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractCurveType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link CurveType }{@code >}
      *     {@link JAXBElement }{@code <}{@link LineStringType }{@code >}
      *     
      */
     public void set_Curve(JAXBElement<? extends AbstractCurveType> value) {
-        this.curve = ((JAXBElement<? extends AbstractCurveType> ) value);
+        this._Curve = value;
     }
 
     public boolean isSet_Curve() {
-        return (this.curve!= null);
+        return (this._Curve!= null);
     }
 
     public String toString() {
@@ -112,7 +112,7 @@ public class CurveMember
         {
             JAXBElement<? extends AbstractCurveType> the_Curve;
             the_Curve = this.get_Curve();
-            strategy.appendField(locator, this, "curve", buffer, the_Curve);
+            strategy.appendField(locator, this, "_Curve", buffer, the_Curve);
         }
         return buffer;
     }
@@ -130,7 +130,7 @@ public class CurveMember
             lhs_Curve = this.get_Curve();
             JAXBElement<? extends AbstractCurveType> rhs_Curve;
             rhs_Curve = that.get_Curve();
-            if (!strategy.equals(LocatorUtils.property(thisLocator, "curve", lhs_Curve), LocatorUtils.property(thatLocator, "curve", rhs_Curve), lhs_Curve, rhs_Curve)) {
+            if (!strategy.equals(LocatorUtils.property(thisLocator, "_Curve", lhs_Curve), LocatorUtils.property(thatLocator, "_Curve", rhs_Curve), lhs_Curve, rhs_Curve)) {
                 return false;
             }
         }
@@ -147,7 +147,7 @@ public class CurveMember
         {
             JAXBElement<? extends AbstractCurveType> the_Curve;
             the_Curve = this.get_Curve();
-            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "curve", the_Curve), currentHashCode, the_Curve);
+            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "_Curve", the_Curve), currentHashCode, the_Curve);
         }
         return currentHashCode;
     }
@@ -174,10 +174,10 @@ public class CurveMember
                 JAXBElement<? extends AbstractCurveType> source_Curve;
                 source_Curve = this.get_Curve();
                 @SuppressWarnings("unchecked")
-                JAXBElement<? extends AbstractCurveType> copy_Curve = ((JAXBElement<? extends AbstractCurveType> ) strategy.copy(LocatorUtils.property(locator, "curve", source_Curve), source_Curve));
+                JAXBElement<? extends AbstractCurveType> copy_Curve = ((JAXBElement<? extends AbstractCurveType> ) strategy.copy(LocatorUtils.property(locator, "_Curve", source_Curve), source_Curve));
                 copy.set_Curve(copy_Curve);
             } else {
-                copy.curve = null;
+                copy._Curve = null;
             }
         }
         return draftCopy;

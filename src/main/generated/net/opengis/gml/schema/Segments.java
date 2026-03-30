@@ -36,22 +36,22 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CurveSegmentArrayPropertyType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.opengis.net/gml}_CurveSegment" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="CurveSegmentArrayPropertyType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.opengis.net/gml}_CurveSegment" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CurveSegmentArrayPropertyType", propOrder = {
-    "curveSegments"
+    "_CurveSegments"
 })
 @XmlRootElement(name = "segments")
 public class Segments
@@ -59,8 +59,8 @@ public class Segments
 {
 
     private final static long serialVersionUID = 1001L;
-    @XmlElementRef(name = "_CurveSegment", namespace = "http://www.opengis.net/gml", type = JAXBElement.class)
-    protected List<JAXBElement<? extends AbstractCurveSegmentType>> curveSegments;
+    @XmlElementRef(name = "_CurveSegment", namespace = "http://www.opengis.net/gml", type = JAXBElement.class, required = false)
+    protected List<JAXBElement<? extends AbstractCurveSegmentType>> _CurveSegments;
 
     /**
      * Gets the value of the curveSegments property.
@@ -80,24 +80,24 @@ public class Segments
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link JAXBElement }{@code <}{@link LineStringSegmentType }{@code >}
      * {@link JAXBElement }{@code <}{@link AbstractCurveSegmentType }{@code >}
+     * {@link JAXBElement }{@code <}{@link LineStringSegmentType }{@code >}
      * 
      * 
      */
     public List<JAXBElement<? extends AbstractCurveSegmentType>> get_CurveSegments() {
-        if (curveSegments == null) {
-            curveSegments = new ArrayList<JAXBElement<? extends AbstractCurveSegmentType>>();
+        if (_CurveSegments == null) {
+            _CurveSegments = new ArrayList<JAXBElement<? extends AbstractCurveSegmentType>>();
         }
-        return this.curveSegments;
+        return this._CurveSegments;
     }
 
     public boolean isSet_CurveSegments() {
-        return ((this.curveSegments!= null)&&(!this.curveSegments.isEmpty()));
+        return ((this._CurveSegments!= null)&&(!this._CurveSegments.isEmpty()));
     }
 
     public void unset_CurveSegments() {
-        this.curveSegments = null;
+        this._CurveSegments = null;
     }
 
     public String toString() {
@@ -118,7 +118,7 @@ public class Segments
         {
             List<JAXBElement<? extends AbstractCurveSegmentType>> the_CurveSegments;
             the_CurveSegments = (this.isSet_CurveSegments()?this.get_CurveSegments():null);
-            strategy.appendField(locator, this, "curveSegments", buffer, the_CurveSegments);
+            strategy.appendField(locator, this, "_CurveSegments", buffer, the_CurveSegments);
         }
         return buffer;
     }
@@ -136,7 +136,7 @@ public class Segments
             lhs_CurveSegments = (this.isSet_CurveSegments()?this.get_CurveSegments():null);
             List<JAXBElement<? extends AbstractCurveSegmentType>> rhs_CurveSegments;
             rhs_CurveSegments = (that.isSet_CurveSegments()?that.get_CurveSegments():null);
-            if (!strategy.equals(LocatorUtils.property(thisLocator, "curveSegments", lhs_CurveSegments), LocatorUtils.property(thatLocator, "curveSegments", rhs_CurveSegments), lhs_CurveSegments, rhs_CurveSegments)) {
+            if (!strategy.equals(LocatorUtils.property(thisLocator, "_CurveSegments", lhs_CurveSegments), LocatorUtils.property(thatLocator, "_CurveSegments", rhs_CurveSegments), lhs_CurveSegments, rhs_CurveSegments)) {
                 return false;
             }
         }
@@ -153,7 +153,7 @@ public class Segments
         {
             List<JAXBElement<? extends AbstractCurveSegmentType>> the_CurveSegments;
             the_CurveSegments = (this.isSet_CurveSegments()?this.get_CurveSegments():null);
-            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "curveSegments", the_CurveSegments), currentHashCode, the_CurveSegments);
+            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "_CurveSegments", the_CurveSegments), currentHashCode, the_CurveSegments);
         }
         return currentHashCode;
     }
@@ -180,7 +180,7 @@ public class Segments
                 List<JAXBElement<? extends AbstractCurveSegmentType>> source_CurveSegments;
                 source_CurveSegments = (this.isSet_CurveSegments()?this.get_CurveSegments():null);
                 @SuppressWarnings("unchecked")
-                List<JAXBElement<? extends AbstractCurveSegmentType>> copy_CurveSegments = ((List<JAXBElement<? extends AbstractCurveSegmentType>> ) strategy.copy(LocatorUtils.property(locator, "curveSegments", source_CurveSegments), source_CurveSegments));
+                List<JAXBElement<? extends AbstractCurveSegmentType>> copy_CurveSegments = ((List<JAXBElement<? extends AbstractCurveSegmentType>> ) strategy.copy(LocatorUtils.property(locator, "_CurveSegments", source_CurveSegments), source_CurveSegments));
                 copy.unset_CurveSegments();
                 List<JAXBElement<? extends AbstractCurveSegmentType>> unique_CurveSegmentsl = copy.get_CurveSegments();
                 unique_CurveSegmentsl.addAll(copy_CurveSegments);
@@ -198,14 +198,14 @@ public class Segments
     /**
      * Sets the value of the _CurveSegments property.
      * 
-     * @param curveSegments
+     * @param _CurveSegments
      *     allowed object is
      *     {@link JAXBElement }{@code <}{@link LineStringSegmentType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractCurveSegmentType }{@code >}
      *     
      */
-    public void set_CurveSegments(List<JAXBElement<? extends AbstractCurveSegmentType>> curveSegments) {
-        this.curveSegments = curveSegments;
+    public void set_CurveSegments(List<JAXBElement<? extends AbstractCurveSegmentType>> _CurveSegments) {
+        this._CurveSegments = _CurveSegments;
     }
 
 }

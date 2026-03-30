@@ -51,27 +51,27 @@ import org.tridas.util.TridasObjectEx;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;element name="object">
- *   &lt;complexType>
- *     &lt;complexContent>
- *       &lt;extension base="{http://www.tridas.org/1.2.2}tridasEntity">
- *         &lt;sequence>
- *           &lt;element ref="{http://www.tridas.org/1.2.2}type"/>
- *           &lt;element ref="{http://www.tridas.org/1.2.2}description" minOccurs="0"/>
- *           &lt;element name="linkSeries" type="{http://www.tridas.org/1.2.2}seriesLinksWithPreferred" minOccurs="0"/>
- *           &lt;element ref="{http://www.tridas.org/1.2.2}file" maxOccurs="unbounded" minOccurs="0"/>
- *           &lt;element ref="{http://www.tridas.org/1.2.2}creator" minOccurs="0"/>
- *           &lt;element ref="{http://www.tridas.org/1.2.2}owner" minOccurs="0"/>
- *           &lt;element ref="{http://www.tridas.org/1.2.2}coverage" minOccurs="0"/>
- *           &lt;element ref="{http://www.tridas.org/1.2.2}location" minOccurs="0"/>
- *           &lt;element ref="{http://www.tridas.org/1.2.2}genericField" maxOccurs="unbounded" minOccurs="0"/>
- *           &lt;element ref="{http://www.tridas.org/1.2.2}object" maxOccurs="unbounded" minOccurs="0"/>
- *           &lt;element ref="{http://www.tridas.org/1.2.2}element" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;/sequence>
- *       &lt;/extension>
- *     &lt;/complexContent>
- *   &lt;/complexType>
- * &lt;/element>
+ * &lt;element name="object"&gt;
+ *   &lt;complexType&gt;
+ *     &lt;complexContent&gt;
+ *       &lt;extension base="{http://www.tridas.org/1.2.2}tridasEntity"&gt;
+ *         &lt;sequence&gt;
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}type"/&gt;
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}description" minOccurs="0"/&gt;
+ *           &lt;element name="linkSeries" type="{http://www.tridas.org/1.2.2}seriesLinksWithPreferred" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}file" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}creator" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}owner" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}coverage" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}location" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}genericField" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}object" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *           &lt;element ref="{http://www.tridas.org/1.2.2}element" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;/sequence&gt;
+ *       &lt;/extension&gt;
+ *     &lt;/complexContent&gt;
+ *   &lt;/complexType&gt;
+ * &lt;/element&gt;
  * </pre>
  * 
  * 

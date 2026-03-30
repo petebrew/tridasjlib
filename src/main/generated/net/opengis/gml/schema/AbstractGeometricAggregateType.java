@@ -31,12 +31,12 @@ import org.jvnet.jaxb2_commons.locator.ObjectLocator;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AbstractGeometricAggregateType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.opengis.net/gml}AbstractGeometryType">
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AbstractGeometricAggregateType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://www.opengis.net/gml}AbstractGeometryType"&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -45,8 +45,8 @@ import org.jvnet.jaxb2_commons.locator.ObjectLocator;
 @XmlType(name = "AbstractGeometricAggregateType")
 @XmlSeeAlso({
     MultiPointType.class,
-    MultiSurfaceType.class,
-    MultiCurveType.class
+    MultiCurveType.class,
+    MultiSurfaceType.class
 })
 public abstract class AbstractGeometricAggregateType
     extends AbstractGeometryType

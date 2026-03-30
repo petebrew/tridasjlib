@@ -34,22 +34,22 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="GeometryPropertyType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.opengis.net/gml}_Geometry"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="GeometryPropertyType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.opengis.net/gml}_Geometry"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "GeometryPropertyType", propOrder = {
-    "geometry"
+    "_Geometry"
 })
 public class GeometryPropertyType
     implements Serializable, Cloneable, CopyTo, Equals, HashCode, ToString
@@ -57,31 +57,31 @@ public class GeometryPropertyType
 
     private final static long serialVersionUID = 1001L;
     @XmlElementRef(name = "_Geometry", namespace = "http://www.opengis.net/gml", type = JAXBElement.class)
-    protected JAXBElement<? extends AbstractGeometryType> geometry;
+    protected JAXBElement<? extends AbstractGeometryType> _Geometry;
 
     /**
      * Gets the value of the _Geometry property.
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link MultiSurfaceType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link PolygonType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link MultiCurveType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link CurveType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link AbstractCurveType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractGeometricAggregateType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractGeometricPrimitiveType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link LinearRingType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractGeometryType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link MultiPointType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link PointType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link LineStringType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link SurfaceType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractSurfaceType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link AbstractCurveType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link CurveType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link LineStringType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link LinearRingType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link MultiCurveType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link MultiPointType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link MultiSurfaceType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link PointType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link PolygonType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link SurfaceType }{@code >}
      *     
      */
     public JAXBElement<? extends AbstractGeometryType> get_Geometry() {
-        return geometry;
+        return _Geometry;
     }
 
     /**
@@ -89,28 +89,28 @@ public class GeometryPropertyType
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link MultiSurfaceType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link PolygonType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link MultiCurveType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link CurveType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link AbstractCurveType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractGeometricAggregateType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractGeometricPrimitiveType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link LinearRingType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractGeometryType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link MultiPointType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link PointType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link LineStringType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link SurfaceType }{@code >}
      *     {@link JAXBElement }{@code <}{@link AbstractSurfaceType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link AbstractCurveType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link CurveType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link LineStringType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link LinearRingType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link MultiCurveType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link MultiPointType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link MultiSurfaceType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link PointType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link PolygonType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link SurfaceType }{@code >}
      *     
      */
     public void set_Geometry(JAXBElement<? extends AbstractGeometryType> value) {
-        this.geometry = ((JAXBElement<? extends AbstractGeometryType> ) value);
+        this._Geometry = value;
     }
 
     public boolean isSet_Geometry() {
-        return (this.geometry!= null);
+        return (this._Geometry!= null);
     }
 
     public String toString() {
@@ -131,7 +131,7 @@ public class GeometryPropertyType
         {
             JAXBElement<? extends AbstractGeometryType> the_Geometry;
             the_Geometry = this.get_Geometry();
-            strategy.appendField(locator, this, "geometry", buffer, the_Geometry);
+            strategy.appendField(locator, this, "_Geometry", buffer, the_Geometry);
         }
         return buffer;
     }
@@ -149,7 +149,7 @@ public class GeometryPropertyType
             lhs_Geometry = this.get_Geometry();
             JAXBElement<? extends AbstractGeometryType> rhs_Geometry;
             rhs_Geometry = that.get_Geometry();
-            if (!strategy.equals(LocatorUtils.property(thisLocator, "geometry", lhs_Geometry), LocatorUtils.property(thatLocator, "geometry", rhs_Geometry), lhs_Geometry, rhs_Geometry)) {
+            if (!strategy.equals(LocatorUtils.property(thisLocator, "_Geometry", lhs_Geometry), LocatorUtils.property(thatLocator, "_Geometry", rhs_Geometry), lhs_Geometry, rhs_Geometry)) {
                 return false;
             }
         }
@@ -166,7 +166,7 @@ public class GeometryPropertyType
         {
             JAXBElement<? extends AbstractGeometryType> the_Geometry;
             the_Geometry = this.get_Geometry();
-            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "geometry", the_Geometry), currentHashCode, the_Geometry);
+            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "_Geometry", the_Geometry), currentHashCode, the_Geometry);
         }
         return currentHashCode;
     }
@@ -193,10 +193,10 @@ public class GeometryPropertyType
                 JAXBElement<? extends AbstractGeometryType> source_Geometry;
                 source_Geometry = this.get_Geometry();
                 @SuppressWarnings("unchecked")
-                JAXBElement<? extends AbstractGeometryType> copy_Geometry = ((JAXBElement<? extends AbstractGeometryType> ) strategy.copy(LocatorUtils.property(locator, "geometry", source_Geometry), source_Geometry));
+                JAXBElement<? extends AbstractGeometryType> copy_Geometry = ((JAXBElement<? extends AbstractGeometryType> ) strategy.copy(LocatorUtils.property(locator, "_Geometry", source_Geometry), source_Geometry));
                 copy.set_Geometry(copy_Geometry);
             } else {
-                copy.geometry = null;
+                copy._Geometry = null;
             }
         }
         return draftCopy;

@@ -36,22 +36,22 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SurfacePropertyType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.opengis.net/gml}_Surface"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SurfacePropertyType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.opengis.net/gml}_Surface"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SurfacePropertyType", propOrder = {
-    "surface"
+    "_Surface"
 })
 @XmlRootElement(name = "surfaceMember")
 public class SurfaceMember
@@ -60,20 +60,20 @@ public class SurfaceMember
 
     private final static long serialVersionUID = 1001L;
     @XmlElementRef(name = "_Surface", namespace = "http://www.opengis.net/gml", type = JAXBElement.class)
-    protected JAXBElement<? extends AbstractSurfaceType> surface;
+    protected JAXBElement<? extends AbstractSurfaceType> _Surface;
 
     /**
      * Gets the value of the _Surface property.
      * 
      * @return
      *     possible object is
+     *     {@link JAXBElement }{@code <}{@link AbstractSurfaceType }{@code >}
      *     {@link JAXBElement }{@code <}{@link PolygonType }{@code >}
      *     {@link JAXBElement }{@code <}{@link SurfaceType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link AbstractSurfaceType }{@code >}
      *     
      */
     public JAXBElement<? extends AbstractSurfaceType> get_Surface() {
-        return surface;
+        return _Surface;
     }
 
     /**
@@ -81,17 +81,17 @@ public class SurfaceMember
      * 
      * @param value
      *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link AbstractSurfaceType }{@code >}
      *     {@link JAXBElement }{@code <}{@link PolygonType }{@code >}
      *     {@link JAXBElement }{@code <}{@link SurfaceType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link AbstractSurfaceType }{@code >}
      *     
      */
     public void set_Surface(JAXBElement<? extends AbstractSurfaceType> value) {
-        this.surface = ((JAXBElement<? extends AbstractSurfaceType> ) value);
+        this._Surface = value;
     }
 
     public boolean isSet_Surface() {
-        return (this.surface!= null);
+        return (this._Surface!= null);
     }
 
     public String toString() {
@@ -112,7 +112,7 @@ public class SurfaceMember
         {
             JAXBElement<? extends AbstractSurfaceType> the_Surface;
             the_Surface = this.get_Surface();
-            strategy.appendField(locator, this, "surface", buffer, the_Surface);
+            strategy.appendField(locator, this, "_Surface", buffer, the_Surface);
         }
         return buffer;
     }
@@ -130,7 +130,7 @@ public class SurfaceMember
             lhs_Surface = this.get_Surface();
             JAXBElement<? extends AbstractSurfaceType> rhs_Surface;
             rhs_Surface = that.get_Surface();
-            if (!strategy.equals(LocatorUtils.property(thisLocator, "surface", lhs_Surface), LocatorUtils.property(thatLocator, "surface", rhs_Surface), lhs_Surface, rhs_Surface)) {
+            if (!strategy.equals(LocatorUtils.property(thisLocator, "_Surface", lhs_Surface), LocatorUtils.property(thatLocator, "_Surface", rhs_Surface), lhs_Surface, rhs_Surface)) {
                 return false;
             }
         }
@@ -147,7 +147,7 @@ public class SurfaceMember
         {
             JAXBElement<? extends AbstractSurfaceType> the_Surface;
             the_Surface = this.get_Surface();
-            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "surface", the_Surface), currentHashCode, the_Surface);
+            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "_Surface", the_Surface), currentHashCode, the_Surface);
         }
         return currentHashCode;
     }
@@ -174,10 +174,10 @@ public class SurfaceMember
                 JAXBElement<? extends AbstractSurfaceType> source_Surface;
                 source_Surface = this.get_Surface();
                 @SuppressWarnings("unchecked")
-                JAXBElement<? extends AbstractSurfaceType> copy_Surface = ((JAXBElement<? extends AbstractSurfaceType> ) strategy.copy(LocatorUtils.property(locator, "surface", source_Surface), source_Surface));
+                JAXBElement<? extends AbstractSurfaceType> copy_Surface = ((JAXBElement<? extends AbstractSurfaceType> ) strategy.copy(LocatorUtils.property(locator, "_Surface", source_Surface), source_Surface));
                 copy.set_Surface(copy_Surface);
             } else {
-                copy.surface = null;
+                copy._Surface = null;
             }
         }
         return draftCopy;

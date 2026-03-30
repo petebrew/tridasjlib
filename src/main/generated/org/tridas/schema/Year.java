@@ -35,14 +35,14 @@ import org.tridas.adapters.IntegerAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="year">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>int">
- *       &lt;attribute name="certainty" type="{http://www.tridas.org/1.2.2}certainty" />
- *       &lt;attribute name="suffix" use="required" type="{http://www.tridas.org/1.2.2}datingSuffix" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType name="year"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;int"&gt;
+ *       &lt;attribute name="certainty" type="{http://www.tridas.org/1.2.2}certainty" /&gt;
+ *       &lt;attribute name="suffix" use="required" type="{http://www.tridas.org/1.2.2}datingSuffix" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

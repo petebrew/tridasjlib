@@ -41,16 +41,16 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AbstractFeatureBaseType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.opengis.net/gml}AbstractGMLType">
- *       &lt;sequence>
- *         &lt;group ref="{http://www.opengis.net/gml}StandardObjectProperties"/>
- *       &lt;/sequence>
- *       &lt;attribute ref="{http://www.opengis.net/gml}id use="required""/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AbstractFeatureBaseType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.opengis.net/gml}AbstractGMLType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;group ref="{http://www.opengis.net/gml}StandardObjectProperties"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute ref="{http://www.opengis.net/gml}id use="required""/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

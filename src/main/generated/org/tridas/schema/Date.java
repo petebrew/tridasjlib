@@ -34,13 +34,13 @@ import org.tridas.annotations.TridasEditProperties;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="date">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>date">
- *       &lt;attribute name="certainty" type="{http://www.tridas.org/1.2.2}certainty" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType name="date"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;date"&gt;
+ *       &lt;attribute name="certainty" type="{http://www.tridas.org/1.2.2}certainty" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

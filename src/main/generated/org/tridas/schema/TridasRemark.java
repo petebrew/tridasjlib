@@ -33,14 +33,14 @@ import org.tridas.interfaces.NormalTridasVoc;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.tridas.org/1.2.2>controlledVoc">
- *       &lt;attribute name="normalTridas" type="{http://www.tridas.org/1.2.2}normalTridasRemark" />
- *       &lt;attribute name="inheritedCount" type="{http://www.w3.org/2001/XMLSchema}int" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.tridas.org/1.2.2&gt;controlledVoc"&gt;
+ *       &lt;attribute name="normalTridas" type="{http://www.tridas.org/1.2.2}normalTridasRemark" /&gt;
+ *       &lt;attribute name="inheritedCount" type="{http://www.w3.org/2001/XMLSchema}int" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

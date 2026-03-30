@@ -36,22 +36,22 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SurfacePatchArrayPropertyType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.opengis.net/gml}_SurfacePatch" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SurfacePatchArrayPropertyType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.opengis.net/gml}_SurfacePatch" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SurfacePatchArrayPropertyType", propOrder = {
-    "surfacePatches"
+    "_SurfacePatches"
 })
 @XmlRootElement(name = "patches")
 public class Patches
@@ -59,8 +59,8 @@ public class Patches
 {
 
     private final static long serialVersionUID = 1001L;
-    @XmlElementRef(name = "_SurfacePatch", namespace = "http://www.opengis.net/gml", type = JAXBElement.class)
-    protected List<JAXBElement<? extends AbstractSurfacePatchType>> surfacePatches;
+    @XmlElementRef(name = "_SurfacePatch", namespace = "http://www.opengis.net/gml", type = JAXBElement.class, required = false)
+    protected List<JAXBElement<? extends AbstractSurfacePatchType>> _SurfacePatches;
 
     /**
      * Gets the value of the surfacePatches property.
@@ -86,18 +86,18 @@ public class Patches
      * 
      */
     public List<JAXBElement<? extends AbstractSurfacePatchType>> get_SurfacePatches() {
-        if (surfacePatches == null) {
-            surfacePatches = new ArrayList<JAXBElement<? extends AbstractSurfacePatchType>>();
+        if (_SurfacePatches == null) {
+            _SurfacePatches = new ArrayList<JAXBElement<? extends AbstractSurfacePatchType>>();
         }
-        return this.surfacePatches;
+        return this._SurfacePatches;
     }
 
     public boolean isSet_SurfacePatches() {
-        return ((this.surfacePatches!= null)&&(!this.surfacePatches.isEmpty()));
+        return ((this._SurfacePatches!= null)&&(!this._SurfacePatches.isEmpty()));
     }
 
     public void unset_SurfacePatches() {
-        this.surfacePatches = null;
+        this._SurfacePatches = null;
     }
 
     public String toString() {
@@ -118,7 +118,7 @@ public class Patches
         {
             List<JAXBElement<? extends AbstractSurfacePatchType>> the_SurfacePatches;
             the_SurfacePatches = (this.isSet_SurfacePatches()?this.get_SurfacePatches():null);
-            strategy.appendField(locator, this, "surfacePatches", buffer, the_SurfacePatches);
+            strategy.appendField(locator, this, "_SurfacePatches", buffer, the_SurfacePatches);
         }
         return buffer;
     }
@@ -136,7 +136,7 @@ public class Patches
             lhs_SurfacePatches = (this.isSet_SurfacePatches()?this.get_SurfacePatches():null);
             List<JAXBElement<? extends AbstractSurfacePatchType>> rhs_SurfacePatches;
             rhs_SurfacePatches = (that.isSet_SurfacePatches()?that.get_SurfacePatches():null);
-            if (!strategy.equals(LocatorUtils.property(thisLocator, "surfacePatches", lhs_SurfacePatches), LocatorUtils.property(thatLocator, "surfacePatches", rhs_SurfacePatches), lhs_SurfacePatches, rhs_SurfacePatches)) {
+            if (!strategy.equals(LocatorUtils.property(thisLocator, "_SurfacePatches", lhs_SurfacePatches), LocatorUtils.property(thatLocator, "_SurfacePatches", rhs_SurfacePatches), lhs_SurfacePatches, rhs_SurfacePatches)) {
                 return false;
             }
         }
@@ -153,7 +153,7 @@ public class Patches
         {
             List<JAXBElement<? extends AbstractSurfacePatchType>> the_SurfacePatches;
             the_SurfacePatches = (this.isSet_SurfacePatches()?this.get_SurfacePatches():null);
-            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "surfacePatches", the_SurfacePatches), currentHashCode, the_SurfacePatches);
+            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "_SurfacePatches", the_SurfacePatches), currentHashCode, the_SurfacePatches);
         }
         return currentHashCode;
     }
@@ -180,7 +180,7 @@ public class Patches
                 List<JAXBElement<? extends AbstractSurfacePatchType>> source_SurfacePatches;
                 source_SurfacePatches = (this.isSet_SurfacePatches()?this.get_SurfacePatches():null);
                 @SuppressWarnings("unchecked")
-                List<JAXBElement<? extends AbstractSurfacePatchType>> copy_SurfacePatches = ((List<JAXBElement<? extends AbstractSurfacePatchType>> ) strategy.copy(LocatorUtils.property(locator, "surfacePatches", source_SurfacePatches), source_SurfacePatches));
+                List<JAXBElement<? extends AbstractSurfacePatchType>> copy_SurfacePatches = ((List<JAXBElement<? extends AbstractSurfacePatchType>> ) strategy.copy(LocatorUtils.property(locator, "_SurfacePatches", source_SurfacePatches), source_SurfacePatches));
                 copy.unset_SurfacePatches();
                 List<JAXBElement<? extends AbstractSurfacePatchType>> unique_SurfacePatchesl = copy.get_SurfacePatches();
                 unique_SurfacePatchesl.addAll(copy_SurfacePatches);
@@ -198,14 +198,14 @@ public class Patches
     /**
      * Sets the value of the _SurfacePatches property.
      * 
-     * @param surfacePatches
+     * @param _SurfacePatches
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link AbstractSurfacePatchType }{@code >}
      *     {@link JAXBElement }{@code <}{@link PolygonPatchType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link AbstractSurfacePatchType }{@code >}
      *     
      */
-    public void set_SurfacePatches(List<JAXBElement<? extends AbstractSurfacePatchType>> surfacePatches) {
-        this.surfacePatches = surfacePatches;
+    public void set_SurfacePatches(List<JAXBElement<? extends AbstractSurfacePatchType>> _SurfacePatches) {
+        this._SurfacePatches = _SurfacePatches;
     }
 
 }

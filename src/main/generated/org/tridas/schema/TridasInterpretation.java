@@ -32,22 +32,22 @@ import org.tridas.annotations.TridasEditProperties;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}dating" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}firstYear" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}lastYear" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}datingReference" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}statFoundation" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}pithYear" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}deathYear" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}provenance" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}dating" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}firstYear" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}lastYear" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}datingReference" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}statFoundation" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}pithYear" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}deathYear" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}provenance" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

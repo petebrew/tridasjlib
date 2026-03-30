@@ -10,21 +10,20 @@ import javax.xml.bind.annotation.XmlType;
  * <p>Java class for normalTridasVariable.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="normalTridasVariable">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="ring width"/>
- *     &lt;enumeration value="earlywood width"/>
- *     &lt;enumeration value="latewood width"/>
- *     &lt;enumeration value="ring density"/>
- *     &lt;enumeration value="earlywood density"/>
- *     &lt;enumeration value="latewood density"/>
- *     &lt;enumeration value="maximum density"/>
- *     &lt;enumeration value="latewood percent"/>
- *     &lt;enumeration value="vessel size"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="normalTridasVariable"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="ring width"/&gt;
+ *     &lt;enumeration value="earlywood width"/&gt;
+ *     &lt;enumeration value="latewood width"/&gt;
+ *     &lt;enumeration value="ring density"/&gt;
+ *     &lt;enumeration value="earlywood density"/&gt;
+ *     &lt;enumeration value="latewood density"/&gt;
+ *     &lt;enumeration value="maximum density"/&gt;
+ *     &lt;enumeration value="latewood percent"/&gt;
+ *     &lt;enumeration value="vessel size"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

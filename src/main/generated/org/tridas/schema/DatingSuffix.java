@@ -10,16 +10,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>Java class for datingSuffix.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="datingSuffix">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="AD"/>
- *     &lt;enumeration value="BC"/>
- *     &lt;enumeration value="BP"/>
- *     &lt;enumeration value="relative"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="datingSuffix"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="AD"/&gt;
+ *     &lt;enumeration value="BC"/&gt;
+ *     &lt;enumeration value="BP"/&gt;
+ *     &lt;enumeration value="relative"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

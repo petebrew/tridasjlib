@@ -30,25 +30,25 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}unit"/>
- *         &lt;element name="height" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
- *         &lt;choice>
- *           &lt;sequence>
- *             &lt;element name="diameter" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
- *           &lt;/sequence>
- *           &lt;sequence>
- *             &lt;element name="width" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
- *             &lt;element name="depth" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
- *           &lt;/sequence>
- *         &lt;/choice>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}unit"/&gt;
+ *         &lt;element name="height" type="{http://www.w3.org/2001/XMLSchema}decimal"/&gt;
+ *         &lt;choice&gt;
+ *           &lt;sequence&gt;
+ *             &lt;element name="diameter" type="{http://www.w3.org/2001/XMLSchema}decimal"/&gt;
+ *           &lt;/sequence&gt;
+ *           &lt;sequence&gt;
+ *             &lt;element name="width" type="{http://www.w3.org/2001/XMLSchema}decimal"/&gt;
+ *             &lt;element name="depth" type="{http://www.w3.org/2001/XMLSchema}decimal"/&gt;
+ *           &lt;/sequence&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

@@ -10,17 +10,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>Java class for complexPresenceAbsence.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="complexPresenceAbsence">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="unknown"/>
- *     &lt;enumeration value="not applicable"/>
- *     &lt;enumeration value="absent"/>
- *     &lt;enumeration value="complete"/>
- *     &lt;enumeration value="incomplete"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="complexPresenceAbsence"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="unknown"/&gt;
+ *     &lt;enumeration value="not applicable"/&gt;
+ *     &lt;enumeration value="absent"/&gt;
+ *     &lt;enumeration value="complete"/&gt;
+ *     &lt;enumeration value="incomplete"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

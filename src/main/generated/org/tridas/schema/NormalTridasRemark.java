@@ -10,31 +10,30 @@ import javax.xml.bind.annotation.XmlType;
  * <p>Java class for normalTridasRemark.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="normalTridasRemark">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="fire damage"/>
- *     &lt;enumeration value="frost damage"/>
- *     &lt;enumeration value="crack"/>
- *     &lt;enumeration value="false ring(s)"/>
- *     &lt;enumeration value="compression wood"/>
- *     &lt;enumeration value="tension wood"/>
- *     &lt;enumeration value="traumatic ducts"/>
- *     &lt;enumeration value="unspecified injury"/>
- *     &lt;enumeration value="single pinned"/>
- *     &lt;enumeration value="double pinned"/>
- *     &lt;enumeration value="triple pinned"/>
- *     &lt;enumeration value="missing ring"/>
- *     &lt;enumeration value="radius shift up"/>
- *     &lt;enumeration value="radius shift down"/>
- *     &lt;enumeration value="moon ring(s)"/>
- *     &lt;enumeration value="diffuse latewood"/>
- *     &lt;enumeration value="density fluctuation"/>
- *     &lt;enumeration value="wide late wood"/>
- *     &lt;enumeration value="wide early wood"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="normalTridasRemark"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="fire damage"/&gt;
+ *     &lt;enumeration value="frost damage"/&gt;
+ *     &lt;enumeration value="crack"/&gt;
+ *     &lt;enumeration value="false ring(s)"/&gt;
+ *     &lt;enumeration value="compression wood"/&gt;
+ *     &lt;enumeration value="tension wood"/&gt;
+ *     &lt;enumeration value="traumatic ducts"/&gt;
+ *     &lt;enumeration value="unspecified injury"/&gt;
+ *     &lt;enumeration value="single pinned"/&gt;
+ *     &lt;enumeration value="double pinned"/&gt;
+ *     &lt;enumeration value="triple pinned"/&gt;
+ *     &lt;enumeration value="missing ring"/&gt;
+ *     &lt;enumeration value="radius shift up"/&gt;
+ *     &lt;enumeration value="radius shift down"/&gt;
+ *     &lt;enumeration value="moon ring(s)"/&gt;
+ *     &lt;enumeration value="diffuse latewood"/&gt;
+ *     &lt;enumeration value="density fluctuation"/&gt;
+ *     &lt;enumeration value="wide late wood"/&gt;
+ *     &lt;enumeration value="wide early wood"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

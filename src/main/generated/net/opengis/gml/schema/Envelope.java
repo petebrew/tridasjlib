@@ -42,17 +42,17 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EnvelopeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="lowerCorner" type="{http://www.opengis.net/gml}DirectPositionType"/>
- *         &lt;element name="upperCorner" type="{http://www.opengis.net/gml}DirectPositionType"/>
- *       &lt;/sequence>
- *       &lt;attribute name="srsName" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EnvelopeType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="lowerCorner" type="{http://www.opengis.net/gml}DirectPositionType"/&gt;
+ *         &lt;element name="upperCorner" type="{http://www.opengis.net/gml}DirectPositionType"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="srsName" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

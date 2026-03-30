@@ -35,22 +35,22 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MultiGeometryPropertyType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.opengis.net/gml}_GeometricAggregate"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MultiGeometryPropertyType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.opengis.net/gml}_GeometricAggregate"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "MultiGeometryPropertyType", propOrder = {
-    "geometricAggregate"
+    "_GeometricAggregate"
 })
 public class MultiGeometryPropertyType
     implements Serializable, Cloneable, CopyTo, Equals, HashCode, ToString
@@ -58,21 +58,21 @@ public class MultiGeometryPropertyType
 
     private final static long serialVersionUID = 1001L;
     @XmlElementRef(name = "_GeometricAggregate", namespace = "http://www.opengis.net/gml", type = JAXBElement.class)
-    protected JAXBElement<? extends AbstractGeometricAggregateType> geometricAggregate;
+    protected JAXBElement<? extends AbstractGeometricAggregateType> _GeometricAggregate;
 
     /**
      * Gets the value of the _GeometricAggregate property.
      * 
      * @return
      *     possible object is
+     *     {@link JAXBElement }{@code <}{@link AbstractGeometricAggregateType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link MultiCurveType }{@code >}
      *     {@link JAXBElement }{@code <}{@link MultiPointType }{@code >}
      *     {@link JAXBElement }{@code <}{@link MultiSurfaceType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link MultiCurveType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link AbstractGeometricAggregateType }{@code >}
      *     
      */
     public JAXBElement<? extends AbstractGeometricAggregateType> get_GeometricAggregate() {
-        return geometricAggregate;
+        return _GeometricAggregate;
     }
 
     /**
@@ -80,18 +80,18 @@ public class MultiGeometryPropertyType
      * 
      * @param value
      *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link AbstractGeometricAggregateType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link MultiCurveType }{@code >}
      *     {@link JAXBElement }{@code <}{@link MultiPointType }{@code >}
      *     {@link JAXBElement }{@code <}{@link MultiSurfaceType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link MultiCurveType }{@code >}
-     *     {@link JAXBElement }{@code <}{@link AbstractGeometricAggregateType }{@code >}
      *     
      */
     public void set_GeometricAggregate(JAXBElement<? extends AbstractGeometricAggregateType> value) {
-        this.geometricAggregate = ((JAXBElement<? extends AbstractGeometricAggregateType> ) value);
+        this._GeometricAggregate = value;
     }
 
     public boolean isSet_GeometricAggregate() {
-        return (this.geometricAggregate!= null);
+        return (this._GeometricAggregate!= null);
     }
 
     public String toString() {
@@ -112,7 +112,7 @@ public class MultiGeometryPropertyType
         {
             JAXBElement<? extends AbstractGeometricAggregateType> the_GeometricAggregate;
             the_GeometricAggregate = this.get_GeometricAggregate();
-            strategy.appendField(locator, this, "geometricAggregate", buffer, the_GeometricAggregate);
+            strategy.appendField(locator, this, "_GeometricAggregate", buffer, the_GeometricAggregate);
         }
         return buffer;
     }
@@ -130,7 +130,7 @@ public class MultiGeometryPropertyType
             lhs_GeometricAggregate = this.get_GeometricAggregate();
             JAXBElement<? extends AbstractGeometricAggregateType> rhs_GeometricAggregate;
             rhs_GeometricAggregate = that.get_GeometricAggregate();
-            if (!strategy.equals(LocatorUtils.property(thisLocator, "geometricAggregate", lhs_GeometricAggregate), LocatorUtils.property(thatLocator, "geometricAggregate", rhs_GeometricAggregate), lhs_GeometricAggregate, rhs_GeometricAggregate)) {
+            if (!strategy.equals(LocatorUtils.property(thisLocator, "_GeometricAggregate", lhs_GeometricAggregate), LocatorUtils.property(thatLocator, "_GeometricAggregate", rhs_GeometricAggregate), lhs_GeometricAggregate, rhs_GeometricAggregate)) {
                 return false;
             }
         }
@@ -147,7 +147,7 @@ public class MultiGeometryPropertyType
         {
             JAXBElement<? extends AbstractGeometricAggregateType> the_GeometricAggregate;
             the_GeometricAggregate = this.get_GeometricAggregate();
-            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "geometricAggregate", the_GeometricAggregate), currentHashCode, the_GeometricAggregate);
+            currentHashCode = strategy.hashCode(LocatorUtils.property(locator, "_GeometricAggregate", the_GeometricAggregate), currentHashCode, the_GeometricAggregate);
         }
         return currentHashCode;
     }
@@ -174,10 +174,10 @@ public class MultiGeometryPropertyType
                 JAXBElement<? extends AbstractGeometricAggregateType> source_GeometricAggregate;
                 source_GeometricAggregate = this.get_GeometricAggregate();
                 @SuppressWarnings("unchecked")
-                JAXBElement<? extends AbstractGeometricAggregateType> copy_GeometricAggregate = ((JAXBElement<? extends AbstractGeometricAggregateType> ) strategy.copy(LocatorUtils.property(locator, "geometricAggregate", source_GeometricAggregate), source_GeometricAggregate));
+                JAXBElement<? extends AbstractGeometricAggregateType> copy_GeometricAggregate = ((JAXBElement<? extends AbstractGeometricAggregateType> ) strategy.copy(LocatorUtils.property(locator, "_GeometricAggregate", source_GeometricAggregate), source_GeometricAggregate));
                 copy.set_GeometricAggregate(copy_GeometricAggregate);
             } else {
-                copy.geometricAggregate = null;
+                copy._GeometricAggregate = null;
             }
         }
         return draftCopy;

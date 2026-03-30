@@ -42,13 +42,13 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AbstractGeometryType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.opengis.net/gml}AbstractGMLType">
- *       &lt;attribute name="srsName" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AbstractGeometryType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://www.opengis.net/gml}AbstractGMLType"&gt;
+ *       &lt;attribute name="srsName" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -57,8 +57,8 @@ import org.jvnet.jaxb2_commons.locator.util.LocatorUtils;
 @XmlType(name = "AbstractGeometryType")
 @XmlSeeAlso({
     AbstractGeometricAggregateType.class,
-    AbstractGeometricPrimitiveType.class,
-    LinearRingType.class
+    LinearRingType.class,
+    AbstractGeometricPrimitiveType.class
 })
 public abstract class AbstractGeometryType
     extends AbstractGMLType

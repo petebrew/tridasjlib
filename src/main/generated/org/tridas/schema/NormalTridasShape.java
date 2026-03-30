@@ -10,32 +10,31 @@ import javax.xml.bind.annotation.XmlType;
  * <p>Java class for normalTridasShape.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- * <p>
  * <pre>
- * &lt;simpleType name="normalTridasShape">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="whole section"/>
- *     &lt;enumeration value="half section"/>
- *     &lt;enumeration value="third section"/>
- *     &lt;enumeration value="quarter section"/>
- *     &lt;enumeration value="wedge where radius is smaller than circumference"/>
- *     &lt;enumeration value="wedge where radius equals the circumference"/>
- *     &lt;enumeration value="wedge where radius is bigger than the circumference"/>
- *     &lt;enumeration value="beam straightened on one side"/>
- *     &lt;enumeration value="squared beam from whole section"/>
- *     &lt;enumeration value="squared beam from half section"/>
- *     &lt;enumeration value="squared beam from quarter section"/>
- *     &lt;enumeration value="plank cut on one side"/>
- *     &lt;enumeration value="radial plank through pith"/>
- *     &lt;enumeration value="radial plank up to pith"/>
- *     &lt;enumeration value="tangential plank not including pith with breadth larger than a quarter section"/>
- *     &lt;enumeration value="plank not including pith with breadth smaller than a quarter section"/>
- *     &lt;enumeration value="small part of section"/>
- *     &lt;enumeration value="part of undetermined section"/>
- *     &lt;enumeration value="unknown"/>
- *     &lt;enumeration value="other"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="normalTridasShape"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="whole section"/&gt;
+ *     &lt;enumeration value="half section"/&gt;
+ *     &lt;enumeration value="third section"/&gt;
+ *     &lt;enumeration value="quarter section"/&gt;
+ *     &lt;enumeration value="wedge where radius is smaller than circumference"/&gt;
+ *     &lt;enumeration value="wedge where radius equals the circumference"/&gt;
+ *     &lt;enumeration value="wedge where radius is bigger than the circumference"/&gt;
+ *     &lt;enumeration value="beam straightened on one side"/&gt;
+ *     &lt;enumeration value="squared beam from whole section"/&gt;
+ *     &lt;enumeration value="squared beam from half section"/&gt;
+ *     &lt;enumeration value="squared beam from quarter section"/&gt;
+ *     &lt;enumeration value="plank cut on one side"/&gt;
+ *     &lt;enumeration value="radial plank through pith"/&gt;
+ *     &lt;enumeration value="radial plank up to pith"/&gt;
+ *     &lt;enumeration value="tangential plank not including pith with breadth larger than a quarter section"/&gt;
+ *     &lt;enumeration value="plank not including pith with breadth smaller than a quarter section"/&gt;
+ *     &lt;enumeration value="small part of section"/&gt;
+ *     &lt;enumeration value="part of undetermined section"/&gt;
+ *     &lt;enumeration value="unknown"/&gt;
+ *     &lt;enumeration value="other"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

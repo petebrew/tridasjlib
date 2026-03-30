@@ -33,19 +33,19 @@ import org.tridas.adapters.IntegerAdapter;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}nrOfSapwoodRings" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}lastRingUnderBark" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}missingSapwoodRingsToBark" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}missingSapwoodRingsToBarkFoundation" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="presence" use="required" type="{http://www.tridas.org/1.2.2}complexPresenceAbsence" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}nrOfSapwoodRings" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}lastRingUnderBark" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}missingSapwoodRingsToBark" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}missingSapwoodRingsToBarkFoundation" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="presence" use="required" type="{http://www.tridas.org/1.2.2}complexPresenceAbsence" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

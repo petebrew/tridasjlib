@@ -42,28 +42,28 @@ import org.tridas.interfaces.ITridasSeries;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.tridas.org/1.2.2}baseSeries">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}title"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}identifier" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}createdTimestamp" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}lastModifiedTimestamp" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}comments" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}measuringDate" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}woodCompleteness" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}analyst" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}dendrochronologist" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}measuringMethod"/>
- *         &lt;group ref="{http://www.tridas.org/1.2.2}interpretationType" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}genericField" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element ref="{http://www.tridas.org/1.2.2}values" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}ID" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.tridas.org/1.2.2}baseSeries"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}title"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}identifier" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}createdTimestamp" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}lastModifiedTimestamp" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}comments" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}measuringDate" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}woodCompleteness" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}analyst" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}dendrochronologist" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}measuringMethod"/&gt;
+ *         &lt;group ref="{http://www.tridas.org/1.2.2}interpretationType" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}genericField" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.tridas.org/1.2.2}values" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="id" type="{http://www.w3.org/2001/XMLSchema}ID" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

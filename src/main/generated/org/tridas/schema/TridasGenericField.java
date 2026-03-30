@@ -32,26 +32,26 @@ import org.tridas.annotations.TridasEditProperties;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" />
- *       &lt;attribute name="type">
- *         &lt;simpleType>
- *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *             &lt;enumeration value="xs:string"/>
- *             &lt;enumeration value="xs:boolean"/>
- *             &lt;enumeration value="xs:int"/>
- *             &lt;enumeration value="xs:float"/>
- *             &lt;enumeration value="xs:date"/>
- *             &lt;enumeration value="xs:dateTime"/>
- *             &lt;enumeration value="xs:duration"/>
- *           &lt;/restriction>
- *         &lt;/simpleType>
- *       &lt;/attribute>
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;string"&gt;
+ *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" /&gt;
+ *       &lt;attribute name="type"&gt;
+ *         &lt;simpleType&gt;
+ *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *             &lt;enumeration value="xs:string"/&gt;
+ *             &lt;enumeration value="xs:boolean"/&gt;
+ *             &lt;enumeration value="xs:int"/&gt;
+ *             &lt;enumeration value="xs:float"/&gt;
+ *             &lt;enumeration value="xs:date"/&gt;
+ *             &lt;enumeration value="xs:dateTime"/&gt;
+ *             &lt;enumeration value="xs:duration"/&gt;
+ *           &lt;/restriction&gt;
+ *         &lt;/simpleType&gt;
+ *       &lt;/attribute&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
