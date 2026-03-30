@@ -41,16 +41,15 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	
-	 <!--  Repository to deploy to.  When deploying make sure your .m2/settings.xml
-	 file contains the correct username and password for the repository server -->
+	 <!-- Repository to deploy to -->
 	<distributionManagement>
 	    <repository>
-	      <id>ltrr-releases</id>
-	      <url>https://repo.ltrr.arizona.edu/ltrr-releases/</url>
+	      <id>github</id>
+	      <url>https://maven.pkg.github.com/petebrew/tridasjlib</url>
 	    </repository>
 	    <snapshotRepository>
-	      <id>ltrr-snapshots</id>
-	      <url>https://repo.ltrr.arizona.edu/ltrr-snapshots/</url>
+	      <id>github</id>
+	      <url>https://maven.pkg.github.com/petebrew/tridasjlib</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	  	  
